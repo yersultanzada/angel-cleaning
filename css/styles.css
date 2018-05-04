@@ -1,0 +1,8 @@
+header{
+    height: 150px;
+}
+header img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
