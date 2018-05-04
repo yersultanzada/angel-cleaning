@@ -4,43 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Almaty Film Fest</title>
-    <link rel="stylesheet" href="css/bootstrap_4/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize/materialize.min.css">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owlCarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="img/fest_logo-01.png" alt="">
+<header class="white">
+    <div class="container">
+        <div class="row no-mar-bottom">
+            <div class="col s12 m3 l3">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/fest_logo-01.png" alt="">
+                    </a>
                 </div>
-                <div class="col-md-7">
-                    <ul class="nav align-middle">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+            </div>
+            <div class="col s12 m12 l9">
+                <nav class="main-navbar">
+                    <ul class="navbar-links">
+                        <li class="active">
+                            <a href ="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Program</a>
+                        <li>
+                            <a href ="#">Program</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Media</a>
+                        <li>
+                            <a href ="#">Media</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Almaty</a>
+                        <li>
+                            <a href ="#">Almaty</a>
                         </li>
                     </ul>
+
+                    <ul class="language-links">
+                        <li><a href="#">KZ</a></li>
+                        <li><a href="#">RU</a></li>
+                        <li class="active"><a href="#">EN</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="main-carousel" class="owl-carousel owl-theme">
+    <div class="item">
+        <img src="img/alatau.jpg" alt="">
+        <div class="container">
+            <div class="carousel-caption">
+                <div class="cap-title">
+                    Almaty Film Festival
                 </div>
-                <div class="col-md-2">
-                    <nav class="nav flex-column">
-                        <a class="nav-link" href="#">KZ</a>
-                        <a class="nav-link" href="#">RU</a>
-                        <a class="nav-link active" href="#">EN</a>
-                    </nav>
+                <div class="cap-text">
+                    September 15 - 20, 2018
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <div class="item">
+        <img src="img/alatau.jpg" alt="">
+        <div class="container">
+            <div class="carousel-caption">
+                <div class="cap-title">
+                    Almaty Film Festival
+                </div>
+                <div class="cap-text">
+                    September 15 - 20, 2018
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about" class="white">
+    <div class="about-title">About</div>
+    <div class="about-content">
+        <div class="about-caption">
+            Almaty Film Fest is a new festival organised by Almaty government. The Festival will be held from 15-19 September 2018 in Almaty.
+            The purpose of Almaty Film Festival is the development of Kazakh cinema, the increase of the interest of the broad public in film art
+            and the strengthening of international co-operation. The festival aimes to introduce Almaty as the major cultural and tourist center of
+            Cеntral Asia and to get acquainted international cinema world with the advantages and new opportunities of film production in Kazakhstan.
+        </div>
+    </div>
+</div>
+
+<div id="application">
+    <div class="app-text">Application are now open</div>
+</div>
+
+<div id="contacts" class="white">
+    <div class="container">
+        <div class="row">
+            <div class="contacts-title">Contacts</div>
+            <div class="col s12 m12 l6" style="padding-right: 0">
+                <div class="contacts-address">
+                    <div class="address">
+                        55, Khodzhanov st.<br>
+                        Republic of Kazakhstan,<br>
+                        index 050060, Almaty city<br>
+                        Phone: +7 (727) 297 16 53<br>
+                        E-mail: info@almatyfilmfest.com
+                    </div>
+                    <div class="line">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l6" style="padding-left: 0">
+                <img src="img/map.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
