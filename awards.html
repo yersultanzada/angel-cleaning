@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Almaty Film Fest</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize/materialize.min.css">
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/owlCarousel/owl.carousel.min.css">
@@ -16,28 +15,131 @@
 <header class="white">
     <div class="container">
         <div class="row no-mar-bottom">
-            <div class="col s12 m3 l2">
-                <div class="logo">
-                    <a href="#">
-                        <img src="img/fest_logo-01.png" alt="">
+            <div class="col s3 m3 l2">
+                <div class="logo hide-on-med-and-down">
+                    <a href="index.html">
+                        <img src="img/fest_logo.png" alt="">
                     </a>
                 </div>
             </div>
             <div class="col s12 m12 l10">
                 <nav class="main-navbar">
-                    <ul class="navbar-links">
+                    <a data-target="mobile-menu" class="sidenav-trigger hide-on-large-only"><i class="mdi mdi-menu"></i></a>
+
+                    <div class="col s6 push-s2 m8 push-m1 hide-on-large-only">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/fest_logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="navbar-links hide-on-med-and-down">
                         <li class="active">
-                            <a href ="#">Home</a>
+                            <a href ="index.html" data-target="home" class="dropdown-button">Home</a>
+                            <ul id="home" class="dropdown-content">
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="awards.html">Awards</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Partners and Sponsors</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href ="#">Program</a>
+                            <a href ="#" data-target="program" class="dropdown-button">Program</a>
+                            <ul id="program" class="dropdown-content">
+                                <li>
+                                    <a href="#">Official Selection</a>
+                                </li>
+                                <li>
+                                    <a href="#">Out of Competition Programs</a>
+                                </li>
+                                <li>
+                                    <a href="#">Business Events</a>
+                                </li>
+                                <li>
+                                    <a href="#">Submissions</a>
+                                </li>
+                                <li>
+                                    <a href="#">International Jury</a>
+                                </li>
+                                <li>
+                                    <a href="#">Screening Schedule</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href ="#">Media</a>
+                            <a href ="#" data-target="media" class="dropdown-button">Media</a>
+                            <ul id="media" class="dropdown-content">
+                                <li>
+                                    <a href="#">Accreditation</a>
+                                </li>
+                                <li>
+                                    <a href="#">News</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href ="#">Almaty</a>
+                            <a href ="almaty.html">Almaty</a>
                         </li>
+                    </ul>
+
+                    <ul class="sidenav" id="mobile-menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="awards.html">Awards</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Partners and Sponsors</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Program</a>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Official Selection</a>
+                                </li>
+                                <li>
+                                    <a href="#">Out of Competition Program</a>
+                                </li>
+                                <li>
+                                    <a href="#">Business Events</a>
+                                </li>
+                                <li>
+                                    <a href="#">International Jury</a>
+                                </li>
+                                <li>
+                                    <a href="#">Screening Schedule</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Media</a>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Accreditation</a>
+                                </li>
+                                <li>
+                                    <a href="#">News</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="almaty.html">Almaty</a></li>
                     </ul>
 
                     <ul class="language-links">
@@ -63,6 +165,23 @@
         Best Actress - 1.000.000  tenge<br>
         Best Actor - 1.000.000  tenge<br>
         Special Jury Prize - 1.000.000  tenge
+    </div>
+</div>
+
+<div id="footer">
+    <img src="img/line.png" alt="">
+    <div class="footer-text">
+        <div class="left-text">
+            ALMATY FILM FESTIVAL<br>
+            September 15 - 20, 2018
+        </div>
+        <div class="right-text">
+            55, Khodzhanov st.<br>
+            Republic of Kazakhstan,<br>
+            index 050060, Almaty city<br>
+            Phone: +7 (727) 297 16 53<br>
+            E-mail: info@almatyfilmfest.com
+        </div>
     </div>
 </div>
 

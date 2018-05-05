@@ -1,41 +1,85 @@
-html, body{  font-family: Montserrat, sans-serif;}
-header .container-fluid{ max-width: 1700px; margin: 0 auto;}
-.no-mar-bottom{ margin-bottom: 0}
+@font-face{
 
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+
+    font-family: 'Open Sans';
+    src: url('../fonts/openSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html, body{  font-family: Montserrat, sans-serif;}
+.no-mar-bottom{ margin-bottom: 0}
+.container{ max-width: 1450px}
+
+/*********** MAIN ***************/
 header .logo{ line-height: 120px}
 header .logo a{ color: #000000}
 header .logo img{ vertical-align: middle; max-width: 100%; height: auto; line-height: 1.25 }
 
+header a[data-target = mobile-menu]{ display: table-cell; vertical-align: middle; color: #000}
+header .sidenav-trigger{ float: none}
+
+header nav.main-navbar .sidenav{ padding: 15px 0}
+header nav.main-navbar .sidenav li>a{ font-size: 1.2em; text-align: left}
+header nav.main-navbar .sidenav ul.mobile-sub-menu{ padding-left: 20px}
+header nav.main-navbar .sidenav ul.mobile-sub-menu li>a{ font-size: 1em; height: 40px; line-height: 40px}
+
 header nav.main-navbar { position: relative; display: table; margin: 0 auto; height: 120px; background-color: #fff; box-shadow: none; text-align: center;  }
-header nav.main-navbar .navbar-links { position: relative; left: 50px; display: table-cell; vertical-align: middle }
+header nav.main-navbar .navbar-links { position: relative; left: 100px; display: table-cell; vertical-align: middle }
 header nav.main-navbar .navbar-links li { display: inline; margin-right: 50px }
 header nav.main-navbar .navbar-links li a { display: block; height: 100%; color: #282424; font-size: 1.6em; }
 header nav.main-navbar .navbar-links li.active a { color: #b10000; font-weight: bold}
 header nav.main-navbar .navbar-links li.active { background-color: transparent}
 header nav.main-navbar .navbar-links a:hover { background: transparent }
 
-header nav.main-navbar .language-links { position: relative; right: 0; display: table-cell; vertical-align: middle }
+header nav.main-navbar .dropdown-content{ min-width: 250px; background-color: rgba(171,83,85,0.7); padding: 10px 0}
+header nav.main-navbar .dropdown-content li a{ color: #fff !important; font-size: 1.2em; padding: 10px 15px; font-weight: normal !important; line-height: 1.7}
+header nav.main-navbar .dropdown-content li a.active{ text-decoration: underline}
+header nav.main-navbar .dropdown-content li:hover{ background-color: rgba(171,83,85,1) }
+
+header nav.main-navbar .language-links { position: relative; float: right; padding: 37px 0 }
 header nav.main-navbar .language-links li { display: inline ; margin-left: 10px}
 header nav.main-navbar .language-links li a { display: block; height: 100%; line-height: 46px; padding: 0; color: #b45656; font-size: 1.2em; font-weight: 300; }
 header nav.main-navbar .language-links a:hover { background: transparent }
 header nav.main-navbar .language-links a img { vertical-align: middle; line-height: 1.25 }
 
 .owl-carousel { display: block;}
-.owl-theme .owl-nav .owl-prev{ position: absolute; top: 45%; left: 10px; font-size: 32px; background: rgba(0,0,0,.5); }
-.owl-theme .owl-nav .owl-next{ position: absolute; top: 45%; right: 10px; font-size: 32px; background: rgba(0,0,0,.5); }
+.owl-theme .owl-nav .owl-prev{ position: absolute; top: 45%; left: 10px; background: rgba(0,0,0,.5); }
+.owl-theme .owl-nav .owl-next{ position: absolute; top: 45%; right: 10px; background: rgba(0,0,0,.5); }
 .owl-theme .owl-nav [class*=owl-]:hover{ background-color: #b45656}
 
+.owl-theme .owl-dots .owl-dot{ border-radius: 50%; margin-right: 10px }
+.owl-theme .owl-dots .owl-dot span{ margin: 2px; width: 15px; height: 15px }
+.owl-theme .owl-dots .owl-dot:nth-child(1) span{ background: #c84134}
+.owl-theme .owl-dots .owl-dot:nth-child(2) span{ background: #d588a4}
+.owl-theme .owl-dots .owl-dot:nth-child(3) span{ background: #409f6b}
+.owl-theme .owl-dots .owl-dot:nth-child(4) span{ background: #7ba1c7}
+.owl-theme .owl-dots .owl-dot:nth-child(1).active{ border: 1px solid #c84134}
+.owl-theme .owl-dots .owl-dot:nth-child(2).active{ border: 1px solid #d588a4}
+.owl-theme .owl-dots .owl-dot:nth-child(3).active{ border: 1px solid #409f6b}
+.owl-theme .owl-dots .owl-dot:nth-child(4).active{ border: 1px solid #7ba1c7}
+
 #main-carousel .item img{ display: block; width: 100%; height: auto; }
-#main-carousel .owl-nav{ display: block}
-#main-carousel .owl-dots{ display: none !important;}
-#main-carousel .carousel-caption{ position: absolute; top: 0; right: 0; left: 0; margin: 20em auto; height: auto; z-index: 4;
+#main-carousel .owl-nav{ display: block; margin-top: 0}
+#main-carousel .owl-dots{ display: block; margin-top: 10px}
+#main-carousel .carousel-caption{ position: absolute; top: 0; right: 0; left: 0; margin: 17em auto; height: auto; z-index: 4;
     color: #fff; text-align: center; padding: 2em;  max-width: 680px; opacity: 0.9; background-color: rgba(0,0,0,0.5)}
 #main-carousel .carousel-caption .cap-title { font-size: 2.4em; font-weight: bold; margin-bottom: 10px; margin-top: 0; text-transform: uppercase}
 #main-carousel .carousel-caption .cap-text{ font-size: 2em; }
 
-#about .about-title{ font-size: 1.6em;font-weight: bold; text-transform: uppercase; text-align: center; color: #b10000; margin: 50px 0 30px}
+#about .about-title{ font-size: 1.6em; font-weight: bold; text-transform: uppercase; text-align: center; color: #b10000; margin: 50px 0 30px}
 #about .about-content{ background: url('../img/about-bg.png') no-repeat; padding: 50px 0}
-#about .about-caption{ font-size: 1.4em; color: #000; text-align: center; max-width: 800px; margin: 0 auto 25px;
+#about .about-caption{ font-size: 1.4em; font-family: 'Open Sans', sans-serif; color: #000; text-align: center; max-width: 800px; margin: 0 auto 25px;
     background-color: rgba(255,255,255,0.9); padding: 50px }
 #about .about-caption .about-red-t{ color: #b10000; font-weight: bold}
 
@@ -45,9 +89,21 @@ header nav.main-navbar .language-links a img { vertical-align: middle; line-heig
 #contacts img{ max-width: 100%; height: auto; vertical-align: middle}
 #contacts .contacts-title{ font-size: 1.6em; font-weight: bold; text-transform: uppercase; text-align: center; color: #b10000; margin: 50px 0 30px }
 #contacts .contacts-address{ position: relative}
-#contacts .contacts-address .contacts-caption{ position: absolute; top: 100px; left: 100px; font-size: 1.4em;
-    background-color: rgba(171,83,85,0.7); color: #fff; padding: 15px}
+#contacts .contacts-address .contacts-caption{ font-size: 1.4em; font-family: 'Open Sans', sans-serif; position: absolute; top: 100px; left: 100px;
+    background-color: rgba(171,83,85,0.7); color: #fff; padding: 15px; z-index: 100}
 
 
+/*********** AWARDS ***************/
 #awards .awards-title{ font-size: 1.6em; font-weight: bold; text-transform: uppercase; text-align: center; color: #b10000; margin: 50px 0 30px}
 #awards .awards-content{ font-size: 1.4em; color: #000; text-align: center}
+
+#footer{ position: relative; margin-top: 100px}
+#footer img{ max-width: 100%; height: auto; vertical-align: middle}
+#footer .footer-text{ position: absolute; bottom: 0; left: 0; background-color: rgba(255,255,255,0.8);
+    clear: both; width: 100%; padding: 50px}
+#footer .footer-text .left-text{ font-size: 1.4em; font-weight: bold; color: #b10000; float: left; margin-top: 80px; margin-left: 50px }
+#footer .footer-text .right-text{ font-size: 1.4em; font-family: 'Open Sans', sans-serif; color: #000; float: right; margin-right: 50px }
+
+/*********** ALMATY ***************/
+#center-video{ text-align: center; margin-top: 50px}
+#center-text{ font-size: 1.4em; text-align: center; max-width: 600px; color: #000; margin: 50px auto;}

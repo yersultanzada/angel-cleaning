@@ -13,4 +13,17 @@ $(document).ready(function () {
             "<i class='mdi mdi-chevron-right'></i>"
         ]
     });
+
+    $(".dropdown-button").dropdown({
+        hover: true,
+        coverTrigger: false
+    });
+
+    $('.sidenav').sidenav();
+
+    var dropdownMenu = $(".dropdown-content li a");
+    dropdownMenu.click(function () {
+            dropdownMenu.removeClass('active');
+            $(this).addClass('active')
+    })
 });
