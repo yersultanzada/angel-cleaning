@@ -50,4 +50,13 @@ header ul.navbar-links a:hover{ background: transparent }
 .main_content_text{ margin-top: 50px}
 .main_content_title{ font-family: Phenomena-Regular, sans-serif; font-size: 3.8em; font-weight: bold; color: #1b1b1b; line-height: 85%}
 .main_content_subtitle{ font-size: 1.5em; color: #1b1b1b; margin: 30px 0}
-.main_content_button{ font-size: 1.3em; color: #fff; text-align: center; padding: 1em 4em; border-radius: 8px; background-color: #0D47A1}
+._button{ display: inline-block; font-size: 1.3em; color: #fff; text-align: center; height: auto; line-height: 1; padding: 1em 4em; border-radius: 8px; background: linear-gradient(90deg,#886db0,#7053a3)}
+._button:hover{ background: linear-gradient(90deg,#a593cd,#866faf);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);)}
+
+.main_offer{ background-color: #f9e0a0; padding: 50px 0; }
+.main_offer .row{ opacity: 1;}
+.main_offer .input-field{ margin: 0}
+.main_offer input{ padding: 20px; width: 250px; border-style: none; border-radius: 6px; outline: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);}
+.main_offer_button{ padding: 0.475em 4em;}

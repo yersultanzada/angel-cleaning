@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $("#main-carousel").owlCarousel({
         loop: true,
         items: 1,
@@ -25,5 +26,6 @@ $(document).ready(function () {
     dropdownMenu.click(function () {
             dropdownMenu.removeClass('active');
             $(this).addClass('active')
-    })
+    });
+
 });
