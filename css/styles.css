@@ -1,25 +1,53 @@
+/* Webfont: BloggerSans */
+@font-face {
+    font-family: 'BloggerSans';
+    src: url('../fonts/BloggerSans/BloggerSans.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/BloggerSans/BloggerSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/BloggerSans/BloggerSans.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/BloggerSans/BloggerSans.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/BloggerSans/BloggerSans.svg#BloggerSans') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+
 @font-face{
 
-    font-family: 'Montserrat';
-    src: url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'Phenomena-Regular';
+    src: url('../fonts/phenomena/Phenomena-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 
 }
 
-@font-face{
 
-    font-family: 'Open Sans';
-    src: url('../fonts/openSans/OpenSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-html, body{  font-family: Montserrat, sans-serif;}
+html, body{ font-family: BloggerSans, sans-serif;}
 .no-mar-bottom{ margin-bottom: 0}
 .container{ max-width: 1450px}
 
 /*********** MAIN ***************/
-#main { background-image: url("../img/main-bg.png"); height: 886px}
+#main { background-image: url("../img/main_bg.png");}
+
+header .logo, .social_bar{ display: table-cell; vertical-align: middle; text-align: center}
+header .logo a{ color: #000000}
+header .logo img{ vertical-align: middle; max-width: 100%; height: auto; }
+
+header .social_bar_title{ color: #1b1b1b; font-size: 1.3em;}
+header .social_bar_icon img{ margin-right: 15px}
+
+header nav.main-navbar{ position: relative; display: table; margin: 0 auto; height: 150px; background-color: transparent; box-shadow: none; text-align: center;  }
+header ul.navbar-links{ position: relative; display: table-cell; vertical-align: middle }
+header ul.navbar-links li{ display: inline; }
+header ul.navbar-links li:last-child{ margin-left: 30px }
+header ul.navbar-links li a{ display: block; height: 100%; color: #1b1b1b; font-size: 1.3em; }
+header ul.navbar-links li.active a{ color: #7053a3; }
+header ul.navbar-links li.active{ background-color: transparent}
+header ul.navbar-links a:hover{ background: transparent }
+
+.main_content_img{ max-width: 100%; height: auto; vertical-align: middle}
+.main_content_text{ margin-top: 50px}
+.main_content_title{ font-family: Phenomena-Regular, sans-serif; font-size: 3.8em; font-weight: bold; color: #1b1b1b; line-height: 85%}
+.main_content_subtitle{ font-size: 1.5em; color: #1b1b1b; margin: 30px 0}
+.main_content_button{ font-size: 1.3em; color: #fff; text-align: center; padding: 1em 4em; border-radius: 8px; background-color: #0D47A1}
