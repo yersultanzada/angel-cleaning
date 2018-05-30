@@ -28,7 +28,7 @@ html, body{ font-family: BloggerSans, sans-serif;}
 .container{ max-width: 1450px}
 
 /*********** MAIN ***************/
-#main { background-image: url("../img/main_bg.png");}
+#main { position: relative; background-image: url("../img/main/main_bg.png");}
 
 header .logo, .social_bar{ display: table-cell; vertical-align: middle; text-align: center}
 header .logo a{ color: #000000}
@@ -48,15 +48,54 @@ header ul.navbar-links a:hover{ background: transparent }
 
 .main_content_img{ max-width: 100%; height: auto; vertical-align: middle}
 .main_content_text{ margin-top: 50px}
-.main_content_title{ font-family: Phenomena-Regular, sans-serif; font-size: 3.8em; font-weight: bold; color: #1b1b1b; line-height: 85%}
-.main_content_subtitle{ font-size: 1.5em; color: #1b1b1b; margin: 30px 0}
+._title{ font-family: Phenomena-Regular, sans-serif; font-weight: bold; color: #1b1b1b; line-height: 85%}
+.main_content_title{ font-size: 3.8em;}
+._sub_desc{ font-size: 1.5em; color: #1b1b1b; line-height: 1.3}
+.main_content_subtitle{ margin: 30px 0}
 ._button{ display: inline-block; font-size: 1.3em; color: #fff; text-align: center; height: auto; line-height: 1; padding: 1em 4em; border-radius: 8px; background: linear-gradient(90deg,#886db0,#7053a3)}
 ._button:hover{ background: linear-gradient(90deg,#a593cd,#866faf);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);)}
 
-.main_offer{ background-color: #f9e0a0; padding: 50px 0; }
-.main_offer .row{ opacity: 1;}
+.main_offer{ position: absolute; left: 0; bottom: 0; width: 100%; background-color: rgba(249,224,160,0.7); padding: 50px 0; }
 .main_offer .input-field{ margin: 0}
-.main_offer input{ padding: 20px; width: 250px; border-style: none; border-radius: 6px; outline: none;
+.main_offer input{ font-size: 1.3em; padding: 17px; width: 250px; border-style: none; border-radius: 6px; outline: none;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);}
 .main_offer_button{ padding: 0.475em 4em;}
+
+#why_us{ background-image: url("../img/why_us/why_us_bg.png"); color: #1b1b1b; line-height: 1.2; padding: 43px 0}
+.why_us_title{ font-size: 2.8em; padding: 50px 0}
+
+.why_us_point{ display: inline-block; width: 100%; margin-bottom: 20px}
+.why_us_point_title{ font-size: 1.5em; font-weight: bold; margin-bottom: 5px}
+.why_us_point_desc{ font-size: 1.1em;}
+
+.insurance_title{ font-size: 2.8em; margin-top: 50px}
+.insurance_subtitle{ margin: 30px 0}
+
+.insurance_middle{ background-image: url("../img/insurance/insurance_bg.png"); padding: 4em 0}
+.insurance_point_all{ padding: 8em 0}
+._table_align{ display: table; height: inherit;}
+._table_align_cell{ display: table-cell; vertical-align: middle}
+.insurance_point{ margin-bottom: 30px}
+.insurance_point:last-child{ margin-bottom: 0}
+.insurance_point_cell img{ margin-right: 10px; vertical-align: middle}
+
+.insurance_company{ margin: 0 auto; padding: 20px 0 50px}
+.insurance_company_image img{ margin-right: 20px}
+.insurance_company_desc{ font-size: 1.5em; color: #ef3528; line-height: 1.2}
+
+#price{ background: linear-gradient(90deg,#d5e317,#b8f324) #d5e317; padding: 50px 0; text-align: center}
+.price_title{ font-size: 3.8em; line-height: 1.2; margin-bottom: 40px}
+
+#team{ background-color: #fff; padding: 50px 0; text-align: center}
+.team_title{ font-size: 2.8em; margin: 50px 0}
+.team_crew img{ margin-right: 30px}
+.team_crew img:last-child{ margin-right: 0}
+.team_all{ margin-top: 40px}
+.team_all a{ font-size: 1.5em; color: #ef3528; border-bottom: 3px solid #ef3528}
+
+#faq{ background: linear-gradient(90deg,#f77a79,#fe6180) #f77a79; padding: 50px 0;}
+.faq_title{ font-size: 2.8em; text-align: center; color: #fff}
+.faq_questions ul{ box-shadow: none; color: #fff; border: none}
+.faq_questions .collapsible-header{ font-size: 1.5em; line-height: 1.2; background-color: transparent; outline: none; border-bottom: none}
+.faq_questions .collapsible-body{ border-bottom: none}
