@@ -25,7 +25,7 @@
 
 html, body{ font-family: BloggerSans, sans-serif;}
 .no-mar-bottom{ margin-bottom: 0}
-.container{ max-width: 1450px}
+.container{ max-width: 1450px; width: 85%}
 
 /*********** MAIN ***************/
 #main { position: relative; background-image: url("../img/main/main_bg.png");}
@@ -35,7 +35,7 @@ header .logo a{ color: #000000}
 header .logo img{ vertical-align: middle; max-width: 100%; height: auto; }
 
 header .social_bar_title{ color: #1b1b1b; font-size: 1.3em;}
-header .social_bar_icon img{ margin-right: 15px}
+.social_bar_icon img{ margin-right: 15px}
 
 header nav.main-navbar{ position: relative; display: table; margin: 0 auto; height: 150px; background-color: transparent; box-shadow: none; text-align: center;  }
 header ul.navbar-links{ position: relative; display: table-cell; vertical-align: middle }
@@ -62,7 +62,7 @@ header ul.navbar-links a:hover{ background: transparent }
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);}
 .main_offer_button{ padding: 0.475em 4em;}
 
-#why_us{ background-image: url("../img/why_us/why_us_bg.png"); color: #1b1b1b; line-height: 1.2; padding: 43px 0}
+#why_us{ background-image: url("../img/why_us/why_us_bg.png"); background-color: #f1f0ec; color: #1b1b1b; line-height: 1.2; padding: 43px 0}
 .why_us_title{ font-size: 2.8em; padding: 50px 0}
 
 .why_us_point{ display: inline-block; width: 100%; margin-bottom: 20px}
@@ -96,6 +96,29 @@ header ul.navbar-links a:hover{ background: transparent }
 
 #faq{ background: linear-gradient(90deg,#f77a79,#fe6180) #f77a79; padding: 50px 0;}
 .faq_title{ font-size: 2.8em; text-align: center; color: #fff}
-.faq_questions ul{ box-shadow: none; color: #fff; border: none}
-.faq_questions .collapsible-header{ font-size: 1.5em; line-height: 1.2; background-color: transparent; outline: none; border-bottom: none}
-.faq_questions .collapsible-body{ border-bottom: none}
+.faq_questions{ display: inline-block; width: 100%; margin-bottom: 50px}
+.faq_questions ul{ box-shadow: none; color: #fff; border: none; margin: 50px 0}
+.faq_questions ul li{
+    border-bottom: 3px solid #ff1f52;
+/*    -moz-border-image: -moz-linear-gradient(left, #ff1f52  0%, #ff5e53 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #ff1f52  0%, #ff5e53 100%);
+    border-image: linear-gradient(to right, #ff1f52  0%, #ff5e53 100%);*/
+}
+.faq_questions ul li.active i{ transform: rotate(180deg); transition: 300ms}
+.faq_questions .collapsible-header{ font-size: 1.5em; line-height: 1.2; background-color: transparent; outline: none; border-bottom: none; padding: 0.5em 2em 0.5em 4em}
+.faq_questions .collapsible-header i{ width: 1.6em; font-size: 1.6em; margin-right: 0; transition: 300ms}
+.faq_questions .collapsible-body{ border-bottom: none; padding: 0.5em 3em 0.5em 6em}
+
+.faq_questions a{ font-size: 1.5em; color: #fff; border-bottom: 3px solid #ff1f52; margin-left: 6em}
+
+#order{ background-color: #fff}
+#order img{ max-width: 100%; height: auto; vertical-align: middle; margin-top: -50px}
+.order_content{ margin-top: 6em}
+.order_title{ font-size: 2.8em}
+.order_button{ margin-left: 50px; margin-top: 40px}
+
+#footer{ position: relative; background-image: url("../img/footer_bg.png"); padding: 50px 0; margin-top: -30px}
+.footer_point{ margin-bottom: 10px}
+.footer_address_title{ font-size: 1.5em; font-weight: bold; color: #1b1b1b; line-height: 1.2;}
+.footer_address_desc{ font-size: 1.1em; color: #1b1b1b; line-height: 1.2;}
+.footer_icon{ margin: 30px 0}

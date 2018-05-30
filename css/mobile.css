@@ -1,92 +1,20 @@
-@media only screen and (max-width: 370px){
-    #main-carousel .carousel-caption .cap-title{
-        font-size: 1.4em !important;
-    }
-    #main-carousel .carousel-caption .cap-text{
-        font-size: 1em !important;
-    }
-    iframe{
-        width: 310px !important;
-        height: 180px !important;
-    }
-}
-@media only screen and (max-width: 480px){
-    .owl-theme .owl-nav{
-        display: none !important;
-    }
-}
-@media only screen and (max-width: 601px){
-    #contacts .contacts-address .contacts-caption{
-        position: relative;
-        top: 0;
-        left: 0;
-        text-align: center;
-    }
-    #main-carousel .carousel-caption{
-        padding: 2em !important;
-    }
-    #main-carousel .carousel-caption .cap-title{
-        font-size: 1.8em;
-    }
-    #main-carousel .carousel-caption .cap-text{
-        font-size: 1.4em;
-    }
-    .owl-theme .owl-nav .owl-prev{
-        top: 35%;
-    }
-    .owl-theme .owl-nav .owl-next{
-        top: 35%;
-    }
-    #about .about-title{
-        margin: 20px 0;
-    }
-    #about .about-caption{
-        padding: 0 50px;
-    }
-    #application .app-text{
-        font-size: 1.4em;
-    }
-}
-@media only screen and (max-width: 660px){
-    #footer .footer-text .left-text{
-        float: none;
-        margin: 20px 0;
-        text-align: center;
-    }
-    #footer .footer-text .right-text{
-        float: none;
-        margin-right: 0;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-}
-@media only screen and (min-width: 993px){
-    .container{
-        width: 85%;
-    }
-}
-@media only screen and (max-width: 993px){
-    #main-carousel .carousel-caption{
+@media only screen and (max-width: 1280px){
+    #main .container{
         width: 100%;
-        height: 100%;
-        margin: 0;
-        max-width: inherit;
-        padding: 6em;
     }
-    #about .about-content{
-        padding: 20px 0;
+    .main_content_text{
+        margin-top: 0;
     }
-    #footer .footer-text{
-        position: relative;
-        padding: 0;
+    #why_us{
+        background-image: none;
     }
-    iframe{
-        width: 370px;
-        height: 230px;
+    #why_us .row .col.l6{
+        width: 70%;
     }
-}
-@media only screen and (min-width: 993px) and (max-width: 1366px){
-    #main-carousel .carousel-caption{
-        margin: 11em auto;
+    #why_us .row .col.push-l1{
+        left: 12.333333%;
+    }
+    .why_us_title{
+        text-align: center;
     }
 }
