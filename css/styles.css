@@ -29,7 +29,7 @@ html, body{ font-family: BloggerSans, sans-serif;}
 
 /*********** MAIN ***************/
 #main { position: relative; background-image: url("../img/main/main_bg.png");}
-
+#main .main_left{ display: table; height: 150px}
 header .logo, .social_bar{ display: table-cell; vertical-align: middle; text-align: center}
 header .logo a{ color: #000000}
 header .logo img{ vertical-align: middle; max-width: 100%; height: auto; }
@@ -56,7 +56,7 @@ header ul.navbar-links a:hover{ background: transparent }
 ._button:hover{ background: linear-gradient(90deg,#a593cd,#866faf);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);)}
 
-.main_offer{ position: absolute; left: 0; bottom: 0; width: 100%; background-color: rgba(249,224,160,0.7); padding: 50px 0; }
+.main_offer{ position: absolute; left: 0; bottom: 0; width: 100%; background-color: rgba(175,212,237,0.8); padding: 50px 0; }
 .main_offer .input-field{ margin: 0}
 .main_offer input{ font-size: 1.3em; padding: 17px; width: 250px; border-style: none; border-radius: 6px; outline: none;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);}
@@ -72,8 +72,8 @@ header ul.navbar-links a:hover{ background: transparent }
 .insurance_title{ font-size: 2.8em; margin-top: 50px}
 .insurance_subtitle{ margin: 30px 0}
 
-.insurance_middle{ background-image: url("../img/insurance/insurance_bg.png"); padding: 4em 0}
-.insurance_point_all{ padding: 8em 0}
+.insurance_middle{ position: relative; background-image: url("../img/insurance/insurance_bg.png"); padding: 4em 0}
+.insurance_point_all{ padding: 5em 0}
 ._table_align{ display: table; height: inherit;}
 ._table_align_cell{ display: table-cell; vertical-align: middle}
 .insurance_point{ margin-bottom: 30px}
@@ -84,7 +84,7 @@ header ul.navbar-links a:hover{ background: transparent }
 .insurance_company_image img{ margin-right: 20px}
 .insurance_company_desc{ font-size: 1.5em; color: #ef3528; line-height: 1.2}
 
-#price{ background: linear-gradient(90deg,#d5e317,#b8f324) #d5e317; padding: 50px 0; text-align: center}
+#price{ background: linear-gradient(90deg,#8ad8ea,#99e4da) #8ad8ea; padding: 50px 0; text-align: center}
 .price_title{ font-size: 3.8em; line-height: 1.2; margin-bottom: 40px}
 
 #team{ background-color: #fff; padding: 50px 0; text-align: center}
@@ -94,12 +94,12 @@ header ul.navbar-links a:hover{ background: transparent }
 .team_all{ margin-top: 40px}
 .team_all a{ font-size: 1.5em; color: #ef3528; border-bottom: 3px solid #ef3528}
 
-#faq{ background: linear-gradient(90deg,#f77a79,#fe6180) #f77a79; padding: 50px 0;}
-.faq_title{ font-size: 2.8em; text-align: center; color: #fff}
+#faq{ background: linear-gradient(90deg,#ef8dc5,#fcaaa2) #ef8dc5; padding: 50px 0;}
+.faq_title{ font-size: 2.8em; text-align: center; color: #1b1b1b}
 .faq_questions{ display: inline-block; width: 100%; margin-bottom: 50px}
-.faq_questions ul{ box-shadow: none; color: #fff; border: none; margin: 50px 0}
+.faq_questions ul{ box-shadow: none; color: #1b1b1b; border: none; margin: 50px 0}
 .faq_questions ul li{
-    border-bottom: 3px solid #ff1f52;
+    border-bottom: 3px solid #feae9e;
 /*    -moz-border-image: -moz-linear-gradient(left, #ff1f52  0%, #ff5e53 100%);
     -webkit-border-image: -webkit-linear-gradient(left, #ff1f52  0%, #ff5e53 100%);
     border-image: linear-gradient(to right, #ff1f52  0%, #ff5e53 100%);*/
@@ -109,7 +109,7 @@ header ul.navbar-links a:hover{ background: transparent }
 .faq_questions .collapsible-header i{ width: 1.6em; font-size: 1.6em; margin-right: 0; transition: 300ms}
 .faq_questions .collapsible-body{ border-bottom: none; padding: 0.5em 3em 0.5em 6em}
 
-.faq_questions a{ font-size: 1.5em; color: #fff; border-bottom: 3px solid #ff1f52; margin-left: 6em}
+.faq_questions a{ font-size: 1.5em; color: #1b1b1b; border-bottom: 3px solid #feae9e; margin-left: 6em}
 
 #order{ background-color: #fff}
 #order img{ max-width: 100%; height: auto; vertical-align: middle; margin-top: -50px}

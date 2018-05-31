@@ -17,4 +17,38 @@
     .why_us_title{
         text-align: center;
     }
+    .order_content{
+        margin-top: 3em;
+    }
+}
+@media only screen and (max-width: 1500px){
+    #main .container{
+        width: 100%;
+    }
+    .main_content_text{
+        margin-top: 0;
+    }
+    .main_offer{
+        padding: 25px 0;
+    }
+    .insurance_middle{
+        height: 652px;
+    }
+    .insurance_point_all{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(110, 110, 110, 0.8);
+    }
+    .insurance_point{
+        height: initial;
+        margin: auto;
+        padding-bottom: 30px;
+        min-width: 427px;
+    }
+    .insurance_point_cell{
+        color: #fff;
+    }
 }

@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<!--
     <meta name="viewport" content="width=device-width, initial-scale=1">
+-->
     <title>The angel cleaning</title>
     <link rel="stylesheet" href="css/materialize/materialize.min.css">
-    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/materialize/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/owlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owlCarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -17,8 +19,8 @@
     <div class="container">
         <div class="row no-mar-bottom">
             <header>
-                <div class="col m3 l4" style="display: table; height: 150px">
-                    <div class="logo hide-on-med-and-down">
+                <div class="col s12 m3 l4 main_left">
+                    <div class="logo">
                         <a href="#">
                             <img src="img/main/logo.png" alt="">
                         </a>
@@ -65,10 +67,10 @@
 
         <div class="row no-mar-bottom">
             <div class="main_content">
-                <div class="col l5 push-l1">
+                <div class="col m6 l5 push-l1">
                     <img src="img/main/girl_with_duster.png" class="main_content_img" alt="">
                 </div>
-                <div class="col l4 push-l1">
+                <div class="col m6 l4 push-l1">
                     <div class="main_content_text">
                         <div class="_title main_content_title">
                             С нами работать <br>легко
@@ -95,7 +97,7 @@
                     <input placeholder="Ваше имя" type="text" class="validate browser-default">
                 </div>
                 <div class="input-field col l3 push-l1">
-                    <input placeholder="Телефон" type="tel" class="validate browser-default">
+                    <input placeholder="Телефон" type="tel" id="tel" class="validate browser-default">
                 </div>
                 <div class="col l4 push-l1">
                     <a href="#" class="_button main_offer_button">
@@ -131,7 +133,7 @@
                                 </div>
                                 <div class="why_us_point_desc">
                                     Ваше имущество <br>
-                                    застраховано на 5 млн тг
+                                    застраховано на 6 млн тг
                                 </div>
                             </div>
                         </div>
@@ -231,8 +233,10 @@
                                 <img src="img/insurance/ellipse_red.png" alt="">
                             </div>
                             <div class="_sub_desc insurance_point_cell">
-                                мы тщательно подбираем клинеров <br>
-                                и следим за их работой.
+                                Внимательно отбираем клинеров в <br>
+                                несколько этапов собеседования. Следим, <br>
+                                чтобы они всегда тщательно выполняли <br>
+                                свою работу
                             </div>
                         </div>
 
@@ -241,9 +245,10 @@
                                 <img src="img/insurance/ellipse_red.png" alt="">
                             </div>
                             <div class="_sub_desc insurance_point_cell">
-                                мы храним и пополняем <br>
-                                свой денежный резерв на редкий <br>
-                                случай оплошностей.
+                                Несем отвественность за сохранность <br>
+                                вашего имущества. Для вашей <br>
+                                уверенности страхуем каждую уборку <br>
+                                на 6 000 000 млн. тенге
                             </div>
                         </div>
 
@@ -252,7 +257,7 @@
                                 <img src="img/insurance/ellipse_red.png" alt="">
                             </div>
                             <div class="_sub_desc insurance_point_cell">
-                                мы быстро реагируем на <br>
+                                Мы быстро реагируем на <br>
                                 любые жалобы: служба поддержки <br>
                                 Angel Cleaning работает 24/7.
                             </div>
@@ -269,7 +274,7 @@
                 <img src="img/insurance/standard_insurance_icon.png" alt="">
             </div>
             <div class="_table_align_cell insurance_company_desc">
-                Ваше имущество застраховано на 5 млн тенге <br>
+                Ваше имущество застраховано на 6 млн тенге <br>
                 страховой компанией Standard Insurance
             </div>
         </div>
@@ -493,6 +498,7 @@
 </section>
 
 <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
