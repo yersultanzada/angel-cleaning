@@ -81,16 +81,16 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px 
     </div>
 </div>
 
-<section id="advantages">
+<section id="main-adv">
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="img/advantages/click.png" alt="">
+                <img src="img/main-adv/click.png" alt="">
                 <div class="_block_title my-3">Заказ в 3 клика</div>
                 <div class="_block_desc pt-4">Рассчитайте сумму уборки <br>онлайн и закажите</div>
             </div>
             <div class="col">
-                <img src="img/advantages/key.png" alt="">
+                <img src="img/main-adv/key.png" alt="">
                 <div class="_block_title my-3">Забор и доставка <br>ключей</div>
                 <div class="_block_desc">
                     Наш персональный менеджер<br>
@@ -99,7 +99,7 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px 
                 </div>
             </div>
             <div class="col">
-                <img src="img/advantages/insurance.png" alt="">
+                <img src="img/main-adv/insurance.png" alt="">
                 <div class="_block_title my-3">Страховка на <br>все заказы</div>
                 <div class="_block_desc">
                     Ваше имущество застраховано<br>
@@ -110,7 +110,7 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px 
     </div>
 </section>
 
-<section id="calc">
+<section class="calc">
     <div class="container">
         <div class="row mb-3">
             <div class="col">
@@ -124,178 +124,460 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px 
                 <div class="row">
                     <div class="col-8">
                         <div class="row border-bottom">
-                            <div class="col-6 py-3">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="kvartira" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="kvartira">Квартира</label>
+                            <div class="col-6 p-custom">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="houseType" id="kvartira" value="option1">
+                                    <label class="form-check-label" for="kvartira">
+                                        Квартира
+                                        <i class="mdi mdi-check"></i>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="col-6 py-3">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="dom" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="dom">Дом</label>
+                            <div class="col-6 p-custom">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="houseType" id="dom" value="option1">
+                                    <label class="form-check-label" for="dom">
+                                        Дом
+                                        <i class="mdi mdi-check"></i>
+                                    </label>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-6 py-3">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="podderjka" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="podderjka">Поддерживающая</label>
+                            <div class="col-6 p-custom">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="cleanType" id="podderjka" value="option1">
+                                    <label class="form-check-label" for="podderjka">
+                                        Поддерживающая
+                                        <i class="mdi mdi-check"></i>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="col-6 py-3">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="general" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="general">Генеральная</label>
+                            <div class="col-6 p-custom">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="cleanType" id="general" value="option1">
+                                    <label class="form-check-label" for="general">
+                                        Генеральная
+                                        <i class="mdi mdi-check"></i>
+                                    </label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="row border-bottom border-left border-right">
-                            <div class="col py-3">
+                            <div class="col py-3 h-60">
                                 <div class="number-control">
                                     <button class="number-control_button number-control_button_minus">-</button>
                                     <button class="number-control_button number-control_button_plus">+</button>
-                                    1 комнатная
+                                    <div class="number-control_text">1 комнатная</div>
                                 </div>
                             </div>
                         </div>
                         <div class="row border-left border-right">
-                            <div class="col py-3">
+                            <div class="col py-3 h-60">
                                 <div class="number-control">
                                     <button class="number-control_button number-control_button_minus">-</button>
                                     <button class="number-control_button number-control_button_plus">+</button>
-                                    1 санузел
+                                    <div class="number-control_text">1 санузел</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3">col-2</div>
+            <div class="col-3 text-center py-2">
+                <div class="order_sum my-1">6 500 &#8376</div>
+                <button type="button" class="btn text-white px-4">Заказать уборку</button>
+            </div>
         </div>
     </div>
 </section>
 
-
-
-
-
-<section id="price">
-    <div class="_title price_title">
-        Качественная уборка домов <br>
-        и квартир от 5000 тг.
-    </div>
-    <a href="#" class="_button main_content_button">
-        Заказать уборку
-    </a>
-</section>
-
-<section id="team">
-    <div class="_title team_title">
-        Наши сотрудники
-    </div>
-    <div class="team_crew">
-        <img src="img/cleaner.png" alt="">
-        <img src="img/cleaner.png" alt="">
-        <img src="img/cleaner.png" alt="">
-    </div>
-    <div class="team_all">
-        <a href="#">Смотреть все</a>
-    </div>
-</section>
-
-<section id="faq">
+<section id="how-we-work">
     <div class="container">
-        <div class="row no-mar-bottom">
-            <div class="_title faq_title">
-                Часто задаваемые вопросы
-            </div>
-            <div class="faq_questions">
-                <div class="col s8 push-s2">
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header">
-                                <div class="col s11" style="padding: 0">
-                                    Выполняете ли Вы заказы в частных домах, коттеджах, таунхаусах и на дачах?
-                                </div>
-                                <div class="col s1" style="padding: 0">
-                                    <i class="mdi mdi-chevron-down"></i>
-                                </div>
-                            </div>
-                            <div class="collapsible-body">
-                                <span>
-                                    Lorem ipsum dolor sit amet.
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">
-                                <div class="col s11" style="padding: 0">
-                                    Могу ли я заказать уборку квартиры и уйти по делам, когда
-                                    приедет клинер?
-                                </div>
-                                <div class="col s1" style="padding: 0">
-                                    <i class="mdi mdi-chevron-down"></i>
-                                </div>
-                            </div>
-                            <div class="collapsible-body">
-                                <span>
-                                    Спокойно оставляйте клинера наводить чистоту и отправляйтесь по делам.
-                                    Добавьте дополнительные опции по забору и доставке коючей - клинер приедет,
-                                    куда скажете, заберет у вас ключи и потом привезет их обратно. К цене уборки квартиры
-                                    в этом случае добавится небольшая сумма.
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">
-                                <div class="col s11" style="padding: 0">
-                                    Вы сможете помыть потолки, жалюзи и все, до чего сложно дотянуться?
-                                </div>
-                                <div class="col s1" style="padding: 0">
-                                    <i class="mdi mdi-chevron-down"></i>
-                                </div>
-                            </div>
-                            <div class="collapsible-body">
-                                <span>
-                                    Уборка квартир в Москве - и других крупных городах - означает,
-                                    что грязь дома регулярно приходится вычищать из труднодоступных мест.
-                                    Приготовьте стремянку, и мы протрем доступные вертикальные и горизонтальные
-                                    поверхности даже на высоте. Потолки, жалюзи и стены мы не моем - в рюкзак
-                                    клиенра не поместится нужный инвентарь.
-                                </span>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a href="#">Все вопросы</a>
+        <div class="row">
+            <div class="col">
+                <div class="_section_title text-black mb-5">
+                    Схема нашей работы
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <img src="img/how/order.png" class="ml-2 mb-5" alt="">
+                <img src="img/how/connect1.png" alt="" style="position: absolute; top: 0; right: 0">
+                <div class="how-we-work_text">
+                    1. Вы оформляете<br>
+                    онлайн заказ
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="img/how/key.png" class="ml-2 mb-5" alt="">
+                <img src="img/how/connect2.png" alt="" style="position: absolute; top: 15px; right: 0">
+                <div class="how-we-work_text">
+                    2. Мы забираем ключи
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="img/how/clean.png" class="ml-2 mb-4" alt="">
+                <img src="img/how/connect3.png" alt="" style="position: absolute; top: 15px; right: 0">
+                <div class="how-we-work_text">
+                    3. Выполняем заказ
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="img/how/smile.png" class="ml-2" alt="" style="margin-bottom: 2.5rem">
+                <div class="how-we-work_text">
+                    4. Доставим ключи туда,<br>
+                    куда вы скажете
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="work">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="_section_title text-black mb-3">
+                    Как мы делаем уборку?
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="korpus">
+                <input type="radio" name="odin" checked="checked" id="vkl1"/>
+                <label for="vkl1">Поддерживающая</label>
+                <input type="radio" name="odin" id="vkl2"/>
+                <label for="vkl2">Генеральная</label>
+                <div>первая </div>
+                <div>вторая вкладка</div>
             </div>
         </div>
     </div>
 </section>
 
 <section id="order">
-    <div class="container-fluid">
-        <div class="row no-mar-bottom">
-            <div class="col m6">
-                <img src="img/girl.png" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="_section_title text-white mb-3">
+                    Качественная уборка квартир от <span>5 000 тнг</span>
+                </div>
             </div>
-            <div class="col m6">
-                <div class="order_content">
-                    <div class="_title order_title">
-                        Заказать уборку квартиры
-                    </div>
-                    <div class="order_button">
-                        <a href="#" class="_button">
-                            Рассчитать уборку
-                        </a>
+        </div>
+        <div class="row my-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Ваше имя">
+            </div>
+            <div class="col">
+                <input type="tel" id="tel" class="form-control" placeholder="Ваш телефон">
+            </div>
+            <div class="col text-center">
+                <button type="button" class="btn text-white px-4">Заказать уборку</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="advantages">
+    <div class="container" style="position: relative; z-index: 10">
+        <div class="row">
+            <div class="col">
+                <div class="_section_title text-black mb-5">
+                    Преимущества
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/advantages/spray.png" alt="">
+                <div class="_block_title my-3">
+                    Широкий ассортимент<br>
+                    инвентаря
+                </div>
+                <div class="_block_desc pt-3">
+                    Использование профессионального<br>
+                    оборудования «Kaercher».
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="img/advantages/leaf.png" alt="">
+                <div class="_block_title mt-3 mb-2">
+                    Использование<br>
+                    экологических и<br>
+                    антиаллергеннных средств
+                </div>
+                <div class="_block_desc">
+                    Защищает от аллергии и поможет<br>
+                    в борьбе с пылью и грязью.
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="img/advantages/man.png" alt="">
+                <div class="_block_title my-3">
+                    Персональный<br>
+                    менеджер
+                </div>
+                <div class="_block_desc pt-3">
+                    Ответит на любые ваши<br>
+                    вопросы и поможет с возникшими <br>
+                    трудностями, также, проводит <br>
+                    контроль качества предоставляемых
+                    нами услуг.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/advantages/key2.png" alt="">
+                <div class="_block_title my-3">
+                    Беспланый забор и<br>
+                    доставка ключей
+                </div>
+                <div class="_block_desc pt-3">
+                    Наш персональный менеджер<br>
+                    приедет и заберет ключи.<br>
+                    После, привезет туда, куда<br>
+                    вам будет удобно.
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="img/advantages/card.png" alt="">
+                <div class="_block_title my-2">
+                    Удобный способ<br>
+                    оплаты
+                </div>
+                <div class="_block_desc pt-4">
+                    Выберите самый удобный способ<br>
+                    оплаты - наличными или банков-<br>
+                    ской картой.
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="img/advantages/adv-bg.png" class="adv-bg" alt="">
+</section>
+
+
+
+<section id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="_section_title text-black mb-5">
+                    Наши сотрудники
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="team-member">
+                    <div class="member-photo mb-5"></div>
+                    <div class="member-name py-3">Анна</div>
+                    <div class="member-rating">
+                        <span class="font-weight-bold">
+                            <img src="img/team-star.png" class="mr-2" alt="">
+                            5,6
+                        </span>
+                        <span class="ml-3">
+                            150 голосов
+                        </span>
                     </div>
                 </div>
+            </div>
+            <div class="col-4">
+                <div class="team-member">
+                    <div class="member-photo mb-5"></div>
+                    <div class="member-name py-3">Василиса</div>
+                    <div class="member-rating">
+                        <span class="font-weight-bold">
+                            <img src="img/team-star.png" class="mr-2" alt="">
+                            5,6
+                        </span>
+                        <span class="ml-3">
+                            150 голосов
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="team-member">
+                    <div class="member-photo mb-5"></div>
+                    <div class="member-name py-3">Ольга</div>
+                    <div class="member-rating">
+                        <span class="font-weight-bold">
+                            <img src="img/team-star.png" class="mr-2" alt="">
+                            5,6
+                        </span>
+                        <span class="ml-3">
+                            150 голосов
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="_section_title text-black mb-5">
+                    Часто задаваемые вопросы
+                </div>
+            </div>
+        </div>
+        <div class="row shadow-sm bg-white rounded p-3 mb-3">
+            <div class="col-11 _block_title font-weight-normal">
+                Выполняете ли Вы заказы в частных домах, коттеджах, таунхаусах и на дачах?
+            </div>
+            <div class="col-1">
+                <button class="btn float-right" type="button" data-toggle="collapse" data-target="#question1" aria-expanded="false" aria-controls="question1">
+                    <i class="mdi mdi-plus"></i>
+                </button>
+            </div>
+            <div class="collapse" id="question1">
+                <div class="_block_desc p-3">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+            </div>
+        </div>
+
+        <div class="row shadow-sm bg-white rounded p-3 mb-3">
+            <div class="col-11 _block_title font-weight-normal">
+                Могу ли я заказать уборку квартиры и уйти по делам, когда
+                приедет клинер?
+            </div>
+            <div class="col-1">
+                <button class="btn float-right" type="button" data-toggle="collapse" data-target="#question2" aria-expanded="false" aria-controls="question1">
+                    <i class="mdi mdi-plus"></i>
+                </button>
+            </div>
+            <div class="collapse" id="question2">
+                <div class="_block_desc p-3">
+                    Спокойно оставляйте клинера наводить чистоту и отправляйтесь по делам.
+                    Добавьте дополнительные опции по забору и доставке коючей - клинер приедет,
+                    куда скажете, заберет у вас ключи и потом привезет их обратно. К цене уборки квартиры
+                    в этом случае добавится небольшая сумма.
+                </div>
+            </div>
+        </div>
+
+        <div class="row shadow-sm bg-white rounded p-3 mb-3">
+            <div class="col-11 _block_title font-weight-normal">
+                Вы сможете помыть потолки, жалюзи и все, до чего сложно дотянуться?
+            </div>
+            <div class="col-1">
+                <button class="btn float-right" type="button" data-toggle="collapse" data-target="#question3" aria-expanded="false" aria-controls="question1">
+                    <i class="mdi mdi-plus"></i>
+                </button>
+            </div>
+            <div class="collapse" id="question3">
+                <div class="_block_desc p-3">
+                    Уборка квартир в Москве - и других крупных городах - означает,
+                    что грязь дома регулярно приходится вычищать из труднодоступных мест.
+                    Приготовьте стремянку, и мы протрем доступные вертикальные и горизонтальные
+                    поверхности даже на высоте. Потолки, жалюзи и стены мы не моем - в рюкзак
+                    клиенра не поместится нужный инвентарь.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center mt-5">
+                <button type="button" class="all-questions btn px-5">Все вопросы</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="calc">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col">
+                <div class="_section_title text-white">
+                    Калькулятор
+                </div>
+            </div>
+        </div>
+        <div class="row shadow-sm bg-white rounded w-100">
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="row border-bottom">
+                            <div class="col-6 p-custom">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="houseType2" id="kvartira2" value="option1">
+                                    <label class="form-check-label" for="kvartira2">
+                                        Квартира
+                                        <i class="mdi mdi-check"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6 p-custom">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="houseType2" id="dom2" value="option1">
+                                    <label class="form-check-label" for="dom2">
+                                        Дом
+                                        <i class="mdi mdi-check"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 p-custom">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="cleanType2" id="podderjka2" value="option1">
+                                    <label class="form-check-label" for="podderjka2">
+                                        Поддерживающая
+                                        <i class="mdi mdi-check"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6 p-custom">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="cleanType2" id="general2" value="option1">
+                                    <label class="form-check-label" for="general2">
+                                        Генеральная
+                                        <i class="mdi mdi-check"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row border-bottom border-left border-right">
+                            <div class="col py-3 h-60">
+                                <div class="number-control">
+                                    <button class="number-control_button number-control_button_minus">-</button>
+                                    <button class="number-control_button number-control_button_plus">+</button>
+                                    <div class="number-control_text">1 комнатная</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border-left border-right">
+                            <div class="col py-3 h-60">
+                                <div class="number-control">
+                                    <button class="number-control_button number-control_button_minus">-</button>
+                                    <button class="number-control_button number-control_button_plus">+</button>
+                                    <div class="number-control_text">1 санузел</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 text-center py-2">
+                <div class="order_sum my-1">6 500 &#8376</div>
+                <button type="button" class="btn text-white px-4">Заказать уборку</button>
             </div>
         </div>
     </div>
@@ -303,96 +585,35 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px 
 
 <section id="footer">
     <div class="container">
-        <div class="row no-mar-bottom">
-            <div class="col m9 push-m2">
-                <div class="row no-mar-bottom">
-                    <div class="col m4">
-                        <div class="footer_point">
-                            <div class="footer_address_title">
-                                Мы находимся по адресу:
-                            </div>
-                            <div class="footer_address_desc">
-                                Тридевятое царство, Тридесятое <br>
-                                Государство
-                            </div>
-                        </div>
-
-                        <div class="footer_point">
-                            <div class="footer_address_title">
-                                Пишите нам:
-                            </div>
-                            <div class="footer_address_desc">
-                                info@tazalau.kz
-                            </div>
-                        </div>
-
-                        <div class="footer_point">
-                            <div class="footer_address_title">
-                                Звоните в любое время:
-                            </div>
-                            <div class="footer_address_desc">
-                                +7 727 444 55 33 <br>
-                                +7 727 444 55 33
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col m4">
-                        <div class="footer_point">
-                            <div class="footer_address_title">
-                                Задайте вопрос
-                            </div>
-                            <div class="social_bar_icon footer_icon">
-                                <a href="#">
-                                    <img src="img/main/telegram_icon.png" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="img/main/whatsapp_icon.png" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="img/main/messenger_icon.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="footer_point">
-                            <div class="footer_address_title">
-                                Работаем каждый <br>
-                                день
-                            </div>
-                            <div class="footer_address_desc">
-                                с 9:00 до 21:00 <br>
-                                без выходных
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col m4">
-                        <div class="footer_point">
-                            <div class="footer_address_desc">
-                                Уборка квартир
-                            </div>
-                        </div>
-                        <div class="footer_point">
-                            <div class="footer_address_desc">
-                                Уборка офисов
-                            </div>
-                        </div>
-                        <div class="footer_point">
-                            <div class="footer_address_desc">
-                                Уборка после <br>
-                                ремонта
-                            </div>
-                        </div>
-                        <div class="social_bar_icon footer_icon">
-                            <a href="#">
-                                <img src="img/footer_instagram.png" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/footer_facebook.png" alt="">
-                            </a>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col">
+                <a href="#">Уборка офисов</a>
+                <a href="#">Уборка квартир</a>
+                <a href="#">Уборка после ремонта</a>
+            </div>
+            <div class="col">
+                <div class="footer-title mb-5">Мы в социальных сетях</div>
+                <img src="img/footer/instagram.png" class="ml-2" alt="">
+                <img src="img/footer/facebook.png" class="ml-2" alt="">
+                <img src="img/footer/vk.png" class="ml-2" alt="">
+            </div>
+            <div class="col">
+                <div class="footer-title mb-4">Принимаем оплату <br>картой</div>
+                <img src="img/footer/visa.png" class="ml-2" alt="">
+                <img src="img/footer/mastercard.png" class="ml-2" alt="">
+            </div>
+            <div class="col">
+                <div class="footer-title mb-5">Телефон:</div>
+                <a href="tel:+7 727 304423" class="font-weight-normal">+7 727 304423</a>
+                <a href="tel:+7 727 304423" class="font-weight-normal">+7 727 304423</a>
+            </div>
+            <div class="col">
+                <div class="footer-title mb-5">Адрес:</div>
+                <div class="footer-text">
+                    г. Астана<br>
+                    ул. Тауелсыздык 34, оф.<br>
+                    401 (БЦ Astana Mall)<br>
+                    info@theangel.kz
                 </div>
             </div>
         </div>
