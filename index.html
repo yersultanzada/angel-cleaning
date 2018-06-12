@@ -8,8 +8,8 @@
     <title>The angel cleaning</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/materialize/materialdesignicons.min.css">
-    <link rel="stylesheet" href="css/owlCarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owlCarousel/owl.theme.default.min.css">
+<!--    <link rel="stylesheet" href="css/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owlCarousel/owl.theme.default.min.css">-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
@@ -137,7 +137,7 @@
                 </div>
             </div>
         </div>
-        <div class="row shadow-sm bg-white rounded w-100">
+        <div class="row shadow-sm bg-white rounded">
             <div class="col-9">
                 <div class="row">
                     <div class="col-8">
@@ -256,7 +256,7 @@
     </div>
 </section>
 
-<!--<section id="work">
+<section id="work">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -266,17 +266,68 @@
             </div>
         </div>
         <div class="row">
-            <div class="korpus">
-                <input type="radio" name="odin" checked="checked" id="vkl1"/>
-                <label for="vkl1">Поддерживающая</label>
-                <input type="radio" name="odin" id="vkl2"/>
-                <label for="vkl2">Генеральная</label>
-                <div>первая </div>
-                <div>вторая вкладка</div>
+            <div class="tabs outer-tabs">
+                <ul>
+                    <li>Поддерживающая</li>
+                    <li>Генеральная</li>
+                </ul>
+                <div>
+                    <div>
+                        <div class="tabs inner-tabs">
+                            <ul>
+                                <li>Комнаты</li>
+                                <li>Коридор</li>
+                                <li>Кухня</li>
+                                <li>Ванная</li>
+                            </ul>
+                            <div>
+                                <div class="pictures_with_dot">
+                                    <img src="img/vannaya.png" alt="">
+                                    <div class="_dot dot_1">
+<!--                                        <img src="img/picture_dot.png" class="align-top" alt="">
+                                        <span class="shown text-white">
+                                            Протираем все доступные <br>
+                                            и недоступные поверхности
+                                        </span>
+                                        <span class="hidden text-white">
+                                            <span class="d-block cap_title">
+                                                Протираем все доступные <br>
+                                                и недоступные поверхности
+                                            </span>
+                                            <span class="d-block cap_desc">
+                                                Используем профессиональные <br>
+                                                средства
+                                            </span>
+                                        </span>-->
+                                        <button type="button" class="btn btn-danger" data-toggle="popover" title="Протираем все доступные
+                                                и недоступные поверхности" data-content="Используем профессиональные средства"></button>
+                                    </div>
+                                </div>
+                                <div>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur ea error et, ipsam modi, nam nesciunt obcaecati officiis quam quisquam recusandae similique sint tempora voluptatibus? Aut debitis rem vel?
+                                </div>
+                                <div>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur ea error et, ipsam modi, nam nesciunt obcaecati officiis quam quisquam recusandae similique sint tempora voluptatibus? Aut debitis rem vel?
+                                </div>
+                                <div>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur ea error et, ipsam modi, nam nesciunt obcaecati officiis quam quisquam recusandae similique sint tempora voluptatibus? Aut debitis rem vel?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur ea error et, ipsam modi, nam nesciunt obcaecati officiis quam quisquam recusandae similique sint tempora voluptatibus? Aut debitis rem vel?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center mt-5">
+                <button type="button" class="btn px-5">Полный список услуг</button>
             </div>
         </div>
     </div>
-</section>-->
+</section>
 
 <section id="order">
     <div class="container">
@@ -525,7 +576,7 @@
                 </div>
             </div>
         </div>
-        <div class="row shadow-sm bg-white rounded w-100">
+        <div class="row shadow-sm bg-white rounded">
             <div class="col-9">
                 <div class="row">
                     <div class="col-8">
@@ -663,8 +714,10 @@
 
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/jquery.maskedinput.js"></script>
+<script src="js/bootstrap/popper.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<!--<script src="js/owl.carousel.min.js"></script>-->
+<script src="js/tabs.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
