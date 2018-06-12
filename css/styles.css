@@ -30,16 +30,16 @@ header ul li a{ display: inline-block; height: 100%; padding: 0 1em; }
 header ul li a:hover{ text-decoration: none }
 
 header nav.top_navbar{ height: 36px; line-height: 36px; }
-header ul.navbar_links_top li span{ color: #bfbbc6; font-size: 1em; padding: 0 1em; }
-header ul.navbar_links_top li a{ color: #898198; font-size: 1em; }
-header ul.navbar_links_top li a img{ margin-right: 5px }
+header ul.navbar_links_top li span{ color: #afafaf; font-size: 1em; padding: 0 1em; }
+header ul.navbar_links_top li a{ color: #373737; font-size: 1em; }
+header ul.navbar_links_top li a img{ margin-right: 5px; margin-bottom: 3px }
 header ul.navbar_links_top li.active{ background-color: transparent}
 
 header nav.main_navbar{ height: 48px; line-height: 48px; }
 header ul.navbar_links_main li a{ color: #000000; font-size: 1.2em; font-weight: bold; }
 header ul.navbar_links_main li.active{ background-color: transparent}
 
-#main{ background: url("../img/why_us/why_us_bg.png"); padding: 50px 0}
+#main{ padding: 50px 0}
 
 #main-adv{ padding: 50px 0}
 
@@ -103,14 +103,16 @@ header ul.navbar_links_main li.active{ background-color: transparent}
 #faq .rounded button[aria-expanded=true] i:before{ content: "\F374";}
 #faq .all-questions{ background-color: #fff; color: #9874da; border-radius: 25px}
 
-.faq_questions ul li.active i{ transform: rotate(180deg); transition: 300ms}
-.faq_questions .collapsible-header{ font-size: 1.5em; line-height: 1.2; background-color: transparent; outline: none; border-bottom: none; padding: 0.5em 2em 0.5em 4em}
-.faq_questions .collapsible-header i{ width: 1.6em; font-size: 1.6em; margin-right: 0; transition: 300ms}
-.faq_questions .collapsible-body{ border-bottom: none; padding: 0.5em 3em 0.5em 6em}
-
-.faq_questions a{ font-size: 1.5em; color: #1b1b1b; border-bottom: 3px solid #feae9e; margin-left: 6em}
-
-
 #footer{ padding: 50px 0;}
 #footer a{ display: block; text-decoration: none; color: #000; font-weight: bold; margin-bottom: 10px}
 #footer .footer-title{ color: #000; font-weight: bold; line-height: 1.3}
+
+#footer-bottom nav{ position: relative; height: 36px; line-height: 36px; background-color: transparent; box-shadow: none;}
+#footer-bottom ul{ padding-left: 0}
+#footer-bottom ul li{ display: inline-block; }
+#footer-bottom ul li span{ color: #afafaf; font-size: 1em; padding: 0 1em; }
+#footer-bottom ul li a{ display: inline-block; height: 100%; color: #373737; font-size: 1em; padding: 0 1em; }
+#footer-bottom ul li a:hover{ text-decoration: none }
+#footer-bottom ul li a img{ margin-right: 5px; margin-bottom: 3px }
+
+
