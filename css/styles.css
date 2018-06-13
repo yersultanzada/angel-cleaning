@@ -96,13 +96,29 @@ header ul.navbar_links_main li:last-child a{ color: #7030e5}
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)}
 
 #work .pictures_with_dot{ position: relative}
-#work ._dot .shown{ display: inline-block; font-size: 13px; font-weight: bold; line-height: 1.2}
+#work ._dot button{ width: 20px; height: 20px; border-radius: 50%; padding: 3px}
+#work ._dot button:hover{ box-shadow: 0 0 0 0.2rem rgba(118,69,206,.7)}
+#work ._dot button span{ display: block; width: 12px; height: 12px; background-color: #7645ce; border-radius: 50%}
+
+/*#work ._dot .shown{ display: inline-block; font-size: 13px; font-weight: bold; line-height: 1.2}
 #work ._dot .hidden{ display: none; background-color: rgba(118,69,206,0.8); padding: 10px; border-radius: 0 8px 8px 8px }
 #work ._dot .hidden .cap_title{ font-size: 13px; font-weight: bold; line-height: 1.2; margin-bottom: 5px}
-#work ._dot .hidden .cap_desc{ font-size: 11px; line-height: 1.2 }
+#work ._dot .hidden .cap_desc{ font-size: 11px; line-height: 1.2 }*/
 
-#work .dot_1{ position: absolute; left: 0; bottom: 150px}
+#work .dot_1{ position: absolute; left: 100px; bottom: 150px}
+#work .dot_2{ position: absolute; left: 200px; bottom: 30px}
+#work .dot_3{ position: absolute; left: 340px; bottom: 120px}
+#work .dot_4{ position: absolute; left: 360px; top: 155px}
+#work .dot_5{ position: absolute; right: 400px; bottom: 100px}
+#work .dot_6{ position: absolute; right: 160px; bottom: 50px}
+#work .dot_7{ position: absolute; right: 220px; top: 50px}
 
+.popover{ background-color: rgba(118,69,206,0.8); color: #fff}
+.popover-header{ background-color: rgba(109,64,191,0.8);}
+.popover-body{ color: #fff}
+.bs-popover-auto[x-placement^=right] .arrow::after, .bs-popover-right .arrow::after{ border-right-color: rgba(118,69,206,0.8);}
+
+#work .caption_this{ font-size: 13px; color: #ffc107}
 #work .btn{ background-color: #fff; color: #9874da; border-radius: 25px;}
 
 #order{ background-color: #7645ce; padding: 50px 0}
