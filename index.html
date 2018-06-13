@@ -60,7 +60,10 @@
                                 <a href ="#">Уборка после ремонта</a>
                             </li>
                             <li>
-                                <a href ="#">Войти</a>
+                                <a href ="#">Онлайн Калькулятор</a>
+                            </li>
+                            <li>
+                                <a href ="#">Личный кабинет</a>
                             </li>
                         </ul>
                     </nav>
@@ -86,13 +89,18 @@
                     </div>
                     <form class="pt-3">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваше имя">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваше имя" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" id="tel2 formGroupExampleInput2" placeholder="Ваш телефон">
+                            <input type="tel" class="form-control" id="tel2 formGroupExampleInput2" placeholder="Ваш телефон" required>
                         </div>
-                        <button type="button" class="btn text-white mt-2">Заказать уборку</button>
+                        <button type="button" class="btn text-white mt-2 _order">Заказать уборку</button>
                     </form>
+
+                    <div class="popup">
+                        <div class="popup_title">Cпасибо за заявку</div>
+                        <div class="popup_text">Наш менеджер свяжется с вами</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -137,7 +145,7 @@
                 </div>
             </div>
         </div>
-        <div class="row shadow-sm bg-white rounded">
+        <div class="row shadow-sm bg-white rounded position-relative">
             <div class="col-9">
                 <div class="row">
                     <div class="col-8">
@@ -207,7 +215,12 @@
             </div>
             <div class="col-3 text-center py-2">
                 <div class="order_sum my-1">6 500 &#8376</div>
-                <button type="button" class="btn text-white px-4">Заказать уборку</button>
+                <button type="button" class="btn text-white px-4 _order">Заказать уборку</button>
+            </div>
+
+            <div class="popup">
+                <div class="popup_title">Cпасибо за заявку</div>
+                <div class="popup_text">Наш менеджер свяжется с вами</div>
             </div>
         </div>
     </div>
@@ -275,16 +288,160 @@
                     <div>
                         <div class="tabs inner-tabs">
                             <ul>
-                                <li>Комнаты</li>
+                                <li>Спальня</li>
                                 <li>Коридор</li>
                                 <li>Кухня</li>
                                 <li>Ванная</li>
                             </ul>
                             <div>
-                                <div class="pictures_with_dot">
-                                    <img src="img/vannaya.png" alt="">
+                                <div class="pictures_with_dot _dotted_pic_bedroom">
+                                    <img src="img/bedroom.png" alt="">
                                     <div class="_dot dot_1">
-<!--                                        <img src="img/picture_dot.png" class="align-top" alt="">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем двери"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_2">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем пол и плинтусы"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_3">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем радиаторы"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_4">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем окна"
+                                                data-content="Чистим с внутренней стороны">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_5">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Меняем постельное белье"
+                                                data-content="Застилаем кровать">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_6">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Пылесосим пол и ковры"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_7">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Чистим зеркала и стеклянные поверхности"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_8">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные поверхности"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pictures_with_dot _dotted_pic_hall">
+                                    <img src="img/hall.png" alt="">
+                                    <div class="_dot dot_1">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные поверхности"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_2">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Одежду аккуратно складываем"
+                                                data-content="">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_3">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Расставляем обувь"
+                                                data-content="">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_4">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем двери"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pictures_with_dot _dotted_pic_kitchen">
+                                    <img src="img/kitchen.png" alt="">
+                                    <div class="_dot dot_1">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные поверхности"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_2">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Пылесосим пол и ковры"
+                                                data-content="Используем профессиональное устройство">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_3">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем столешницу и кухонный фартук"
+                                                data-content="Чистим салфеткой из микрофибры">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_4">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем шкаф"
+                                                data-content="Чистим наружные поверхности">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_5">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем посуду"
+                                                data-content="Те, что находятся в раковине и на столах">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_6">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем пол и плинтусы"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_7">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем плиту, холодильник и вытяжку"
+                                                data-content="Чистим наружные поверхности">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_8">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем окна"
+                                                data-content="Чистим с внутренней стороны">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_9">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Выносим мусор"
+                                                data-content="Моем и дезинфецируем мусорное ведро">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_10">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем раковину"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pictures_with_dot _dotted_pic_bathroom">
+                                    <img src="img/bathroom.png" alt="">
+                                    <div class="_dot dot_1">
+                                        <!--<img src="img/picture_dot.png" class="align-top" alt="">
                                         <span class="shown text-white">
                                             Протираем все доступные <br>
                                             и недоступные поверхности
@@ -299,7 +456,7 @@
                                                 средства
                                             </span>
                                         </span>-->
-                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные и недоступные поверхности"
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные поверхности"
                                                 data-content="Используем профессиональные средства">
                                             <span></span>
                                         </button>
@@ -341,27 +498,264 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur ea error et, ipsam modi, nam nesciunt obcaecati officiis quam quisquam recusandae similique sint tempora voluptatibus? Aut debitis rem vel?
-                                </div>
-                                <div>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur ea error et, ipsam modi, nam nesciunt obcaecati officiis quam quisquam recusandae similique sint tempora voluptatibus? Aut debitis rem vel?
-                                </div>
-                                <div>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur ea error et, ipsam modi, nam nesciunt obcaecati officiis quam quisquam recusandae similique sint tempora voluptatibus? Aut debitis rem vel?
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur ea error et, ipsam modi, nam nesciunt obcaecati officiis quam quisquam recusandae similique sint tempora voluptatibus? Aut debitis rem vel?
+                        <div class="tabs inner-tabs">
+                            <ul>
+                                <li>Спальня</li>
+                                <li>Коридор</li>
+                                <li>Кухня</li>
+                                <li>Ванная</li>
+                            </ul>
+                            <div>
+                                <div class="pictures_with_dot _dotted_pic_bedroom _general_type_bedroom">
+                                    <img src="img/bedroom.png" alt="">
+                                    <div class="_dot dot_1">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем двери"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_2">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем пол и плинтусы"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_3">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем радиаторы"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_4">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем окна"
+                                                data-content="Чистим с внутренней стороны">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_5">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Меняем постельное белье"
+                                                data-content="Застилаем кровать">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_6">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Пылесосим пол и ковры"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_7">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Чистим зеркала и стеклянные поверхности"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_8">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные и недоступные поверхности"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_9">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Снимаем и вешаем шторы"
+                                                data-content="А так же моем жалюзи">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_10">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем люстры и светильники"
+                                                data-content="Если не большие и не сложные">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pictures_with_dot _dotted_pic_hall _general_type_hall">
+                                    <img src="img/hall.png" alt="">
+                                    <div class="_dot dot_1">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные и недоступные поверхности"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_2">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Одежду аккуратно складываем"
+                                                data-content="">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_3">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Расставляем обувь"
+                                                data-content="">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_4">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем двери"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_5">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем люстры и светильники"
+                                                data-content="Если не большие и не сложные">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pictures_with_dot _dotted_pic_kitchen _general_type_kitchen">
+                                    <img src="img/kitchen.png" alt="">
+                                    <div class="_dot dot_1">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные и недоступные поверхности"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_2">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Пылесосим пол и ковры"
+                                                data-content="Используем профессиональное устройство">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_3">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем столешницу и кухонный фартук"
+                                                data-content="Чистим салфеткой из микрофибры">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_4">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем шкаф"
+                                                data-content="Чистим снаружи и внутри">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_5">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем посуду"
+                                                data-content="Те, что находятся в раковине и на столах">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_6">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем пол и плинтусы"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_7">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем плиту, холодильник и вытяжку"
+                                                data-content="Чистим снаружи и внутри">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_8">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем окна"
+                                                data-content="Чистим с внутренней стороны">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_9">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Выносим мусор"
+                                                data-content="Моем и дезинфецируем мусорное ведро">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_10">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем раковину"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_11">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем люстры и светильники"
+                                                data-content="Если не большие и не сложные">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_12">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем кафель"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_13">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Снимаем и вешаем шторы"
+                                                data-content="А так же моем жалюзи">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_14">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем радиаторы"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pictures_with_dot _dotted_pic_bathroom _general_type_bathroom">
+                                    <img src="img/bathroom.png" alt="">
+                                    <div class="_dot dot_1">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные и недоступные поверхности"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_2">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем унитаз"
+                                                data-content="Используем антибактериальные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_3">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Выносим мусор"
+                                                data-content="Моем и дезинфецируем мусорное ведро">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_4">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем раковину"
+                                                data-content="Используем антибактериальные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_5">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем душевую кабину и ванну"
+                                                data-content="Используем антибактериальные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_6">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем пол и плинтусы"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_7">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Чистим зеркала и стеклянные поверхности"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_8">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем кафель и стены"
+                                                data-content="">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col text-right mt-2">
-                <span class="caption_this"><i class="mdi mdi-cursor-pointer mr-1"></i>Наведите на точки, чтобы посмотреть описание!</span>
+            <div class="col text-right mt-3">
+                <span class="caption_this"><i class="mdi mdi-cursor-pointer mr-2"></i>Наведите на точки, чтобы посмотреть описание!</span>
             </div>
         </div>
         <div class="row">
@@ -389,9 +783,14 @@
                 <input type="tel" id="tel" class="form-control" placeholder="Ваш телефон">
             </div>
             <div class="col text-center">
-                <button type="button" class="btn text-white px-4">Заказать уборку</button>
+                <button type="button" class="btn text-white px-5 _order">Заказать уборку</button>
             </div>
         </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup_title">Cпасибо за заявку</div>
+        <div class="popup_text">Наш менеджер свяжется с вами</div>
     </div>
 </section>
 
@@ -545,7 +944,7 @@
                 </div>
             </div>
         </div>
-        <div class="row shadow-sm bg-white rounded p-3 mb-3">
+        <div class="row shadow-sm bg_color rounded p-3 mb-3">
             <div class="col-11 _block_title font-weight-normal">
                 Выполняете ли Вы заказы в частных домах, коттеджах, таунхаусах и на дачах?
             </div>
@@ -561,7 +960,7 @@
             </div>
         </div>
 
-        <div class="row shadow-sm bg-white rounded p-3 mb-3">
+        <div class="row shadow-sm bg_color rounded p-3 mb-3">
             <div class="col-11 _block_title font-weight-normal">
                 Могу ли я заказать уборку квартиры и уйти по делам, когда
                 приедет клинер?
@@ -581,7 +980,7 @@
             </div>
         </div>
 
-        <div class="row shadow-sm bg-white rounded p-3 mb-3">
+        <div class="row shadow-sm bg_color rounded p-3 mb-3">
             <div class="col-11 _block_title font-weight-normal">
                 Вы сможете помыть потолки, жалюзи и все, до чего сложно дотянуться?
             </div>
@@ -619,7 +1018,7 @@
                 </div>
             </div>
         </div>
-        <div class="row shadow-sm bg-white rounded">
+        <div class="row shadow-sm bg-white rounded position-relative">
             <div class="col-9">
                 <div class="row">
                     <div class="col-8">
@@ -689,7 +1088,12 @@
             </div>
             <div class="col-3 text-center py-2">
                 <div class="order_sum my-1">6 500 &#8376</div>
-                <button type="button" class="btn text-white px-4">Заказать уборку</button>
+                <button type="submit" class="btn text-white px-4 _order2">Заказать уборку</button>
+            </div>
+
+            <div class="popup">
+                <div class="popup_title">Cпасибо за заявку</div>
+                <div class="popup_text">Наш менеджер свяжется с вами</div>
             </div>
         </div>
     </div>
@@ -730,7 +1134,6 @@
             </div>
         </div>
     </div>
-    <hr>
     <section id="footer-bottom">
         <div class="container">
             <div class="row">
