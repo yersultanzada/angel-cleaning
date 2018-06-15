@@ -42,8 +42,8 @@
                                 <a href ="#"><img src="img/social/whatsapp.png" alt="">Whatsapp</a>
                             </li>
                             <li>
-                                <a href ="tel:+7 727 304423"><img src="img/social/whatsapp-call.png" alt="">+7 727 304423</a>
-                                <a href ="tel:+7 727 304423">+7 727 304423</a>
+                                <a href ="tel:+7 707 277 99 84"><img src="img/social/whatsapp-call.png" alt="">+7 707 277 99 84</a>
+                                <a href ="tel:+7 7172 77 99 84">+7 7172 77 99 84</a>
                             </li>
                         </ul>
                     </nav>
@@ -60,7 +60,7 @@
                                 <a href ="#">Уборка после ремонта</a>
                             </li>
                             <li>
-                                <a href ="#">Онлайн Калькулятор</a>
+                                <a href ="#">Онлайн расчёт</a>
                             </li>
                             <li>
                                 <a href ="#">Личный кабинет</a>
@@ -78,24 +78,32 @@
         <div class="row">
             <div class="col-lg-6 offset-6">
                 <div class="main_caption">
-                    <div class="_block_title main_caption_title mt-5">
+                    <div class="_block_title main_caption_title mt-3">
                         Доверьте уборку
                         профессионалам
                     </div>
                     <div class="_block_desc main_caption_desc my-3">
-                        Доверь нам свои заботы, пока вы
+                        Доверьте нам свои заботы, пока вы
                         зарабатываете, мы приведем ваш дом
                         в порядок.
                     </div>
-                    <form class="pt-3">
+                    <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваше имя">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваше имя" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" id="tel2 formGroupExampleInput2" placeholder="Ваш телефон">
+                            <input type="tel" class="form-control" id="tel2 formGroupExampleInput2" placeholder="Ваш телефон" required>
                         </div>
-                        <button type="button" class="btn text-white mt-2">Заказать уборку</button>
+                        <button type="button" class="btn text-white mt-2 _order">Заказать уборку</button>
+                        <a href="#">
+                            <button type="button" class="btn calculate mt-3">Рассчитать уборку <i class="mdi mdi-chevron-right"></i></button>
+                        </a>
                     </form>
+
+                    <div class="popup">
+                        <div class="popup_title">Cпасибо за заявку</div>
+                        <div class="popup_text">Наш менеджер свяжется с вами</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,7 +132,7 @@
                 <div class="_block_title my-3">Страховка на <br>все заказы</div>
                 <div class="_block_desc">
                     Ваше имущество застраховано<br>
-                    на 6 000 000 тенге
+                    на 6 000 000 тенге страховой комнанией «Standart Insurians»
                 </div>
             </div>
         </div>
@@ -136,11 +144,11 @@
         <div class="row mb-3">
             <div class="col">
                 <div class="_section_title text-white">
-                    Калькулятор
+                    Онлайн расчёт
                 </div>
             </div>
         </div>
-        <div class="row shadow-sm bg-white rounded">
+        <div class="row shadow-sm bg-white rounded position-relative">
             <div class="col-9">
                 <div class="row">
                     <div class="col-8">
@@ -210,7 +218,12 @@
             </div>
             <div class="col-3 text-center py-2">
                 <div class="order_sum my-1">6 500 &#8376</div>
-                <button type="button" class="btn text-white px-4">Заказать уборку</button>
+                <button type="button" class="btn text-white px-4 _order">Заказать уборку</button>
+            </div>
+
+            <div class="popup">
+                <div class="popup_title">Cпасибо за заявку</div>
+                <div class="popup_text">Наш менеджер свяжется с вами</div>
             </div>
         </div>
     </div>
@@ -284,7 +297,7 @@
                                 <li>Ванная</li>
                             </ul>
                             <div>
-                                <div class="pictures_with_dot _support_type_bedroom">
+                                <div class="pictures_with_dot _dotted_pic_bedroom">
                                     <img src="img/rooms/bedroom.png" alt="">
                                     <div class="_dot dot_1">
                                         <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем двери"
@@ -336,7 +349,7 @@
                                     </div>
                                 </div>
 
-                                <div class="pictures_with_dot _support_type_hall">
+                                <div class="pictures_with_dot _dotted_pic_hall">
                                     <img src="img/rooms/hall.png" alt="">
                                     <div class="_dot dot_1">
                                         <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные поверхности"
@@ -364,7 +377,7 @@
                                     </div>
                                 </div>
 
-                                <div class="pictures_with_dot _support_type_kitchen">
+                                <div class="pictures_with_dot _dotted_pic_kitchen">
                                     <img src="img/rooms/kitchen.png" alt="">
                                     <div class="_dot dot_1">
                                         <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные поверхности"
@@ -428,10 +441,10 @@
                                     </div>
                                 </div>
 
-                                <div class="pictures_with_dot _support_type_bathroom">
+                                <div class="pictures_with_dot _dotted_pic_bathroom">
                                     <img src="img/rooms/bathroom.png" alt="">
                                     <div class="_dot dot_1">
-                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные и недоступные поверхности"
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные поверхности"
                                                 data-content="Используем профессиональные средства">
                                             <span></span>
                                         </button>
@@ -485,7 +498,7 @@
                                 <li>Ванная</li>
                             </ul>
                             <div>
-                                <div class="pictures_with_dot _support_type_bedroom">
+                                <div class="pictures_with_dot _dotted_pic_bedroom _general_type_bedroom">
                                     <img src="img/rooms/bedroom.png" alt="">
                                     <div class="_dot dot_1">
                                         <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем двери"
@@ -530,17 +543,29 @@
                                         </button>
                                     </div>
                                     <div class="_dot dot_8">
-                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные поверхности"
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные и недоступные поверхности"
                                                 data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_9">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Снимаем и вешаем шторы"
+                                                data-content="А так же моем жалюзи">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_10">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем люстры и светильники"
+                                                data-content="Если не большие и не сложные">
                                             <span></span>
                                         </button>
                                     </div>
                                 </div>
 
-                                <div class="pictures_with_dot _support_type_hall">
+                                <div class="pictures_with_dot _dotted_pic_hall _general_type_hall">
                                     <img src="img/rooms/hall.png" alt="">
                                     <div class="_dot dot_1">
-                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные поверхности"
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные и недоступные поверхности"
                                                 data-content="Используем профессиональные средства">
                                             <span></span>
                                         </button>
@@ -563,12 +588,18 @@
                                             <span></span>
                                         </button>
                                     </div>
+                                    <div class="_dot dot_5">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем люстры и светильники"
+                                                data-content="Если не большие и не сложные">
+                                            <span></span>
+                                        </button>
+                                    </div>
                                 </div>
 
-                                <div class="pictures_with_dot _support_type_kitchen">
+                                <div class="pictures_with_dot _dotted_pic_kitchen _general_type_kitchen">
                                     <img src="img/rooms/kitchen.png" alt="">
                                     <div class="_dot dot_1">
-                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные поверхности"
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные и недоступные поверхности"
                                                 data-content="Используем профессиональные средства">
                                             <span></span>
                                         </button>
@@ -587,7 +618,7 @@
                                     </div>
                                     <div class="_dot dot_4">
                                         <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем шкаф"
-                                                data-content="Чистим наружные поверхности">
+                                                data-content="Чистим снаружи и внутри">
                                             <span></span>
                                         </button>
                                     </div>
@@ -605,7 +636,7 @@
                                     </div>
                                     <div class="_dot dot_7">
                                         <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем плиту, холодильник и вытяжку"
-                                                data-content="Чистим наружные поверхности">
+                                                data-content="Чистим снаружи и внутри">
                                             <span></span>
                                         </button>
                                     </div>
@@ -627,9 +658,33 @@
                                             <span></span>
                                         </button>
                                     </div>
+                                    <div class="_dot dot_11">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем люстры и светильники"
+                                                data-content="Если не большие и не сложные">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_12">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем кафель"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_13">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Снимаем и вешаем шторы"
+                                                data-content="А так же моем жалюзи">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                    <div class="_dot dot_14">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем радиаторы"
+                                                data-content="Используем профессиональные средства">
+                                            <span></span>
+                                        </button>
+                                    </div>
                                 </div>
 
-                                <div class="pictures_with_dot _support_type_bathroom">
+                                <div class="pictures_with_dot _dotted_pic_bathroom _general_type_bathroom">
                                     <img src="img/rooms/bathroom.png" alt="">
                                     <div class="_dot dot_1">
                                         <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Протираем все доступные и недоступные поверхности"
@@ -673,6 +728,12 @@
                                             <span></span>
                                         </button>
                                     </div>
+                                    <div class="_dot dot_8">
+                                        <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Моем кафель и стены"
+                                                data-content="">
+                                            <span></span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -710,9 +771,14 @@
                 <input type="tel" id="tel" class="form-control" placeholder="Ваш телефон">
             </div>
             <div class="col text-center">
-                <button type="button" class="btn text-white px-5">Заказать уборку</button>
+                <button type="button" class="btn text-white px-5 _order">Заказать уборку</button>
             </div>
         </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup_title">Cпасибо за заявку</div>
+        <div class="popup_text">Наш менеджер свяжется с вами</div>
     </div>
 </section>
 
@@ -734,7 +800,7 @@
                 </div>
                 <div class="_block_desc pt-3">
                     Использование профессионального<br>
-                    оборудования «Kaercher».
+                    оборудования <span class="karcher-text">«K'A'RCHER»</span>.
                 </div>
             </div>
             <div class="col-4">
@@ -744,7 +810,7 @@
                     экологических и<br>
                     антиаллергеннных средств
                 </div>
-                <div class="_block_desc">
+                <div class="_block_desc pt-1">
                     Защищает от аллергии и поможет<br>
                     в борьбе с пылью и грязью.
                 </div>
@@ -768,7 +834,7 @@
             <div class="col-4">
                 <img src="img/advantages/key2.png" alt="">
                 <div class="_block_title my-3">
-                    Беспланый забор и<br>
+                    Бесплатный забор и<br>
                     доставка ключей
                 </div>
                 <div class="_block_desc pt-3">
@@ -811,22 +877,26 @@
         <div class="row">
             <div class="col-4">
                 <div class="team-member">
-                    <div class="member-photo mb-5"></div>
+                    <div class="member-photo mb-5">
+                        <img src="img/team-member.png" alt="">
+                    </div>
                     <div class="member-name py-3">Анна</div>
                     <div class="member-rating">
                         <span class="font-weight-bold">
                             <img src="img/team-star.png" class="mr-2" alt="">
-                            5,6
+                            5,7
                         </span>
                         <span class="ml-3">
-                            150 голосов
+                            151 голосов
                         </span>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="team-member">
-                    <div class="member-photo mb-5"></div>
+                    <div class="member-photo mb-5">
+                        <img src="img/team-member.png" alt="">
+                    </div>
                     <div class="member-name py-3">Василиса</div>
                     <div class="member-rating">
                         <span class="font-weight-bold">
@@ -834,22 +904,24 @@
                             5,6
                         </span>
                         <span class="ml-3">
-                            150 голосов
+                            139 голосов
                         </span>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="team-member">
-                    <div class="member-photo mb-5"></div>
+                    <div class="member-photo mb-5">
+                        <img src="img/team-member.png" alt="">
+                    </div>
                     <div class="member-name py-3">Ольга</div>
                     <div class="member-rating">
                         <span class="font-weight-bold">
                             <img src="img/team-star.png" class="mr-2" alt="">
-                            5,6
+                            5,7
                         </span>
                         <span class="ml-3">
-                            150 голосов
+                            184 голосов
                         </span>
                     </div>
                 </div>
@@ -870,7 +942,7 @@
         </div>
         <div class="row shadow-sm bg_color rounded p-3 mb-3">
             <div class="col-11 _block_title font-weight-normal">
-                Выполняете ли Вы заказы в частных домах, коттеджах, таунхаусах и на дачах?
+                Что возьмет с собой клинер для уборки?
             </div>
             <div class="col-1">
                 <button class="btn float-right" type="button" data-toggle="collapse" data-target="#question1" aria-expanded="false" aria-controls="question1">
@@ -879,15 +951,14 @@
             </div>
             <div class="collapse" id="question1">
                 <div class="_block_desc p-3">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    Наши клинеры придут к Вам с полным набором профессиональных средств и профессиональным пылесосом «K'A'RCHER»
                 </div>
             </div>
         </div>
 
         <div class="row shadow-sm bg_color rounded p-3 mb-3">
             <div class="col-11 _block_title font-weight-normal">
-                Могу ли я заказать уборку квартиры и уйти по делам, когда
-                приедет клинер?
+                Входит ли в стоимость мойка окон?
             </div>
             <div class="col-1">
                 <button class="btn float-right" type="button" data-toggle="collapse" data-target="#question2" aria-expanded="false" aria-controls="question1">
@@ -896,17 +967,14 @@
             </div>
             <div class="collapse" id="question2">
                 <div class="_block_desc p-3">
-                    Спокойно оставляйте клинера наводить чистоту и отправляйтесь по делам.
-                    Добавьте дополнительные опции по забору и доставке коючей - клинер приедет,
-                    куда скажете, заберет у вас ключи и потом привезет их обратно. К цене уборки квартиры
-                    в этом случае добавится небольшая сумма.
+                    Да, в стоимость входит мойка окон с внутренней стороны.
                 </div>
             </div>
         </div>
 
         <div class="row shadow-sm bg_color rounded p-3 mb-3">
             <div class="col-11 _block_title font-weight-normal">
-                Вы сможете помыть потолки, жалюзи и все, до чего сложно дотянуться?
+                Вы сможете помыть  поверхности до которых тяжело дотянуться?
             </div>
             <div class="col-1">
                 <button class="btn float-right" type="button" data-toggle="collapse" data-target="#question3" aria-expanded="false" aria-controls="question1">
@@ -915,11 +983,7 @@
             </div>
             <div class="collapse" id="question3">
                 <div class="_block_desc p-3">
-                    Уборка квартир в Москве - и других крупных городах - означает,
-                    что грязь дома регулярно приходится вычищать из труднодоступных мест.
-                    Приготовьте стремянку, и мы протрем доступные вертикальные и горизонтальные
-                    поверхности даже на высоте. Потолки, жалюзи и стены мы не моем - в рюкзак
-                    клиенра не поместится нужный инвентарь.
+                    Да, мы помоем и почистим поверхности до которых тяжело дотянуться. От Вас требуется предупредить нас, чтобы мы взяли с собой стремянку  или же  заказать онлайн в дополнительных услугах.
                 </div>
             </div>
         </div>
@@ -938,11 +1002,11 @@
         <div class="row mb-3">
             <div class="col">
                 <div class="_section_title text-white">
-                    Калькулятор
+                    Онлайн расчёт
                 </div>
             </div>
         </div>
-        <div class="row shadow-sm bg-white rounded">
+        <div class="row shadow-sm bg-white rounded position-relative">
             <div class="col-9">
                 <div class="row">
                     <div class="col-8">
@@ -1012,7 +1076,12 @@
             </div>
             <div class="col-3 text-center py-2">
                 <div class="order_sum my-1">6 500 &#8376</div>
-                <button type="button" class="btn text-white px-4">Заказать уборку</button>
+                <button type="submit" class="btn text-white px-4 _order2">Заказать уборку</button>
+            </div>
+
+            <div class="popup">
+                <div class="popup_title">Cпасибо за заявку</div>
+                <div class="popup_text">Наш менеджер свяжется с вами</div>
             </div>
         </div>
     </div>

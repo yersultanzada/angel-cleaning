@@ -41,7 +41,7 @@ header ul.navbar_links_main li.active{ background-color: transparent}
 header ul.navbar_links_main li:nth-of-type(4) a{ color: #7030e5}
 
 #main{ background: url("../img/main-cleaner.png") no-repeat; background-position: top; padding-top: 50px; padding-bottom: 163px}
-#main .main_caption{ width: 550px; height: 600px; background-color: #fff; padding: 65px; float: right;
+#main .main_caption{ position: relative; width: 550px; height: 600px; background-color: #fff; padding: 65px; float: right;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
     -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
     border-radius: 35% 55% 75% 25% / 45% 35% 65% 50%;}
@@ -49,6 +49,16 @@ header ul.navbar_links_main li:nth-of-type(4) a{ color: #7030e5}
 #main .main_caption_desc{ font-size: 1.4rem; padding: 0 25px}
 #main form input{ border-radius: 25px; width: 260px; margin-left: 50px}
 #main form .btn{ border-radius: 25px; background-color: #56b17d; border: none; margin-left: 50px; width: 260px}
+#main form .btn.calculate{ background-color: transparent; border: 1px solid #ced4da; color: #575757}
+#main form .btn.calculate .mdi-chevron-right:before{ vertical-align: middle}
+
+#main .popup{ display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: #fff; padding-top: 35%; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    border-radius: 35% 55% 75% 25% / 45% 35% 65% 50%;}
+#main .popup.active{ display: block;}
+#main .popup .popup_title{ font-size: 2rem; font-weight: bold; text-align: center; color: #7645ce}
+#main .popup .popup_text{ text-align: center; color: #575757}
 
 #main-adv{ padding: 50px 0}
 
@@ -71,11 +81,16 @@ header ul.navbar_links_main li:nth-of-type(4) a{ color: #7030e5}
 .calc .number-control_button:hover{ cursor: pointer}
 .calc .number-control_button_minus{ left: 0; }
 .calc .number-control_button_plus{ right: 0; }
-
 .calc .number-control_text{ padding-top: 5px}
 
 .calc .order_sum{ font-size: 2rem}
 .calc .btn{ border-radius: 25px; background-color: #56b17d; border: none}
+
+.calc .popup{ display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: #fff; padding: 20px; border-radius: 0.5rem; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);}
+.calc .popup.active{ display: block;}
+.calc .popup .popup_title{ font-size: 2rem; font-weight: bold; text-align: center; color: #7645ce}
+.calc .popup .popup_text{ text-align: center; color: #575757}
 
 #how-we-work{ padding: 50px}
 #how-we-work .how-we-work_text{ color: #212529; line-height: 1.2}
@@ -100,38 +115,46 @@ header ul.navbar_links_main li:nth-of-type(4) a{ color: #7030e5}
 #work ._dot button:hover{ box-shadow: 0 0 0 0.2rem rgba(118,69,206,.7)}
 #work ._dot button span{ display: block; width: 12px; height: 12px; background-color: #7645ce; border-radius: 50%}
 
-#work ._support_type_bedroom .dot_1{ position: absolute; left: 80px; bottom: 130px}
-#work ._support_type_bedroom .dot_2{ position: absolute; left: 200px; bottom: 30px}
-#work ._support_type_bedroom .dot_3{ position: absolute; left: 280px; bottom: 120px}
-#work ._support_type_bedroom .dot_4{ position: absolute; left: 380px; top: 100px}
-#work ._support_type_bedroom .dot_5{ position: absolute; right: 450px; bottom: 100px}
-#work ._support_type_bedroom .dot_6{ position: absolute; right: 180px; bottom: 50px}
-#work ._support_type_bedroom .dot_7{ position: absolute; right: 200px; top: 50px}
-#work ._support_type_bedroom .dot_8{ position: absolute; right: 400px; top: 30px}
+#work ._dotted_pic_bedroom .dot_1{ position: absolute; left: 80px; bottom: 130px}
+#work ._dotted_pic_bedroom .dot_2{ position: absolute; left: 200px; bottom: 30px}
+#work ._dotted_pic_bedroom .dot_3{ position: absolute; left: 280px; bottom: 120px}
+#work ._dotted_pic_bedroom .dot_4{ position: absolute; left: 380px; top: 100px}
+#work ._dotted_pic_bedroom .dot_5{ position: absolute; right: 450px; bottom: 100px}
+#work ._dotted_pic_bedroom .dot_6{ position: absolute; right: 180px; bottom: 50px}
+#work ._dotted_pic_bedroom .dot_7{ position: absolute; right: 200px; top: 50px}
+#work ._dotted_pic_bedroom .dot_8{ position: absolute; right: 400px; top: 30px}
+#work ._general_type_bedroom .dot_9{ position: absolute; left: 330px; top: 30px}
+#work ._general_type_bedroom .dot_10{ position: absolute; right: 275px; top: 145px}
 
-#work ._support_type_hall .dot_1{ position: absolute; left: 80px; bottom: 200px}
-#work ._support_type_hall .dot_2{ position: absolute; left: 280px; top: 120px}
-#work ._support_type_hall .dot_3{ position: absolute; right: 500px; bottom: 15px}
-#work ._support_type_hall .dot_4{ position: absolute; right: 300px; top: 150px}
+#work ._dotted_pic_hall .dot_1{ position: absolute; left: 80px; bottom: 200px}
+#work ._dotted_pic_hall .dot_2{ position: absolute; left: 280px; top: 120px}
+#work ._dotted_pic_hall .dot_3{ position: absolute; right: 500px; bottom: 15px}
+#work ._dotted_pic_hall .dot_4{ position: absolute; right: 300px; top: 150px}
+#work ._general_type_hall .dot_5{ position: absolute; left: 400px; top: 30px}
 
-#work ._support_type_kitchen .dot_1{ position: absolute; left: 130px; top: 70px}
-#work ._support_type_kitchen .dot_2{ position: absolute; left: 200px; bottom: 30px}
-#work ._support_type_kitchen .dot_3{ position: absolute; left: 280px; bottom: 160px}
-#work ._support_type_kitchen .dot_4{ position: absolute; left: 380px; top: 100px}
-#work ._support_type_kitchen .dot_5{ position: absolute; right: 450px; bottom: 130px}
-#work ._support_type_kitchen .dot_6{ position: absolute; right: 320px; bottom: 50px}
-#work ._support_type_kitchen .dot_7{ position: absolute; right: 270px; top: 70px}
-#work ._support_type_kitchen .dot_8{ position: absolute; right: 400px; top: 50px}
-#work ._support_type_kitchen .dot_9{ position: absolute; left: 350px; bottom: 40px}
-#work ._support_type_kitchen .dot_10{ position: absolute; left: 450px; bottom: 150px}
+#work ._dotted_pic_kitchen .dot_1{ position: absolute; left: 130px; top: 70px}
+#work ._dotted_pic_kitchen .dot_2{ position: absolute; left: 200px; bottom: 30px}
+#work ._dotted_pic_kitchen .dot_3{ position: absolute; left: 280px; bottom: 160px}
+#work ._dotted_pic_kitchen .dot_4{ position: absolute; left: 380px; top: 100px}
+#work ._dotted_pic_kitchen .dot_5{ position: absolute; right: 450px; bottom: 130px}
+#work ._dotted_pic_kitchen .dot_6{ position: absolute; right: 320px; bottom: 50px}
+#work ._dotted_pic_kitchen .dot_7{ position: absolute; right: 270px; top: 70px}
+#work ._dotted_pic_kitchen .dot_8{ position: absolute; right: 400px; top: 50px}
+#work ._dotted_pic_kitchen .dot_9{ position: absolute; left: 350px; bottom: 40px}
+#work ._dotted_pic_kitchen .dot_10{ position: absolute; left: 450px; bottom: 150px}
+#work ._general_type_kitchen .dot_11{ position: absolute; left: 120px; top: 130px}
+#work ._general_type_kitchen .dot_12{ position: absolute; left: 460px; top: 150px}
+#work ._general_type_kitchen .dot_13{ position: absolute; right: 340px; top: 150px}
+#work ._general_type_kitchen .dot_14{ position: absolute; right: 340px; bottom: 120px}
 
-#work ._support_type_bathroom .dot_1{ position: absolute; left: 100px; bottom: 150px}
-#work ._support_type_bathroom .dot_2{ position: absolute; left: 200px; bottom: 30px}
-#work ._support_type_bathroom .dot_3{ position: absolute; left: 340px; bottom: 120px}
-#work ._support_type_bathroom .dot_4{ position: absolute; left: 360px; top: 155px}
-#work ._support_type_bathroom .dot_5{ position: absolute; right: 400px; bottom: 100px}
-#work ._support_type_bathroom .dot_6{ position: absolute; right: 160px; bottom: 50px}
-#work ._support_type_bathroom .dot_7{ position: absolute; right: 220px; top: 50px}
+#work ._dotted_pic_bathroom .dot_1{ position: absolute; left: 100px; bottom: 150px}
+#work ._dotted_pic_bathroom .dot_2{ position: absolute; left: 200px; bottom: 30px}
+#work ._dotted_pic_bathroom .dot_3{ position: absolute; left: 340px; bottom: 120px}
+#work ._dotted_pic_bathroom .dot_4{ position: absolute; left: 360px; top: 155px}
+#work ._dotted_pic_bathroom .dot_5{ position: absolute; right: 400px; bottom: 100px}
+#work ._dotted_pic_bathroom .dot_6{ position: absolute; right: 160px; bottom: 50px}
+#work ._dotted_pic_bathroom .dot_7{ position: absolute; right: 220px; top: 50px}
+#work ._general_type_bathroom .dot_8{ position: absolute; right: 330px; top: 130px}
 
 .popover{ background-color: rgba(118,69,206,0.8); color: #fff}
 .popover-header{ background-color: rgba(109,64,191,0.8);}
@@ -141,16 +164,22 @@ header ul.navbar_links_main li:nth-of-type(4) a{ color: #7030e5}
 #work .caption_this{ font-size: 13px;}
 #work .btn{ background-color: #fff; color: #9874da; border-radius: 25px;}
 
-#order{ background-color: #7645ce; padding: 50px 0}
+#order{position: relative; background-color: #7645ce; padding: 50px 0}
 #order span{ border-bottom: 1px solid #fff}
 #order input{ border-radius: 25px; border: none}
 #order .btn{ border-radius: 25px; border: none; background-color: #56b17d }
 
+#order .popup{ display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: #7645ce; padding: 60px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);}
+#order .popup.active{ display: block;}
+#order .popup .popup_title{ font-size: 2rem; font-weight: bold; text-align: center; color: #fff}
+#order .popup .popup_text{ text-align: center; color: #fff}
+
 #advantages{ position: relative; padding-top: 50px}
+#advantages .karcher-text{ font-weight: bold; border-bottom: 5px solid #FFEE10}
 
 #team{ background-color: #f2eaff; padding: 50px 0}
 #team .team-member{ text-align: center; background-color: #fff; border-radius: 8px; padding: 30px}
-#team .member-photo{ width: 150px; height: 150px; background-color: #f2eaff; border-radius: 50%; margin: 0 auto }
 #team .member-name{ font-size: 1.3rem; color: #212529; text-transform: uppercase}
 
 #faq{ background-color: #fff; padding: 50px 0;}
