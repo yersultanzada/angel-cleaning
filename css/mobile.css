@@ -2,3 +2,60 @@
     header .container{ max-width: 1220px}
     #main .container{ max-width: 1220px}
 }
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    header ul.navbar_links_top li>span{
+        font-size: 0.8rem;
+    }
+    header ul.navbar_links_top li a{
+        font-size: 0.8rem;
+    }
+    header ul.navbar_links_main li a{
+        font-size: 0.9rem;
+    }
+    .calc .form-check-label{
+        width: 195px;
+        margin-left: 7px;
+    }
+}
+@media only screen and (max-width: 992px){
+    #how-we-work .connect{
+        display: none;
+    }
+    #advantages ._block_title{
+        font-size: 1.2rem;
+    }
+    #advantages ._block_desc{
+        font-size: 1rem;
+    }
+    .calc .form-check-label{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .calc .number-control_button_minus{
+        left: 40px;
+    }
+    .calc .number-control_button_plus{
+        right: 40px;
+    }
+    .calc .border-left{
+        border-left: none !important;
+    }
+    .calc .border-right{
+        border-right: none !important;
+    }
+    .calc .b_b{
+        border-bottom: 1px solid #dee2e6;
+    }
+}
+@media only screen and (max-width: 576px){
+    .calc .container>.row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #how-we-work .m_b{
+        margin-bottom: 15px !important;
+    }
+    #footer .b_b{
+        border-bottom: 1px solid #dee2e6;
+    }
+}
