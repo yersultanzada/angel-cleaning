@@ -40,13 +40,22 @@ header ul.navbar_links_main li a{ color: #212529; font-size: 1.0625rem; font-wei
 header ul.navbar_links_main li.active{ background-color: transparent}
 header ul.navbar_links_main li:nth-of-type(4) a{ color: #7030e5}
 
+header #mobile li a{ font-size: 0.875rem; color: #212529; padding: 0}
+header #mobile li a img{ margin-right: 5px; vertical-align: text-top}
+header #mobile .mobile-menu i:before{ font-size: 32px}
+
+header #mobile-dropdown{ display: none}
+header #mobile-dropdown.visible{ display: block}
+header #mobile-dropdown li{ display: block}
+header #mobile-dropdown li:last-child{ float: none}
+
 #main{ background: url("../img/main-cleaner.png") no-repeat; background-position: top; padding-top: 50px; padding-bottom: 163px}
 #main .main_caption{ position: relative; width: 550px; height: 600px; background-color: #fff; padding: 65px; float: right;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
     -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
-    border-radius: 35% 55% 75% 25% / 45% 35% 65% 50%;}
-#main .main_caption_title{ font-size: 2.8rem; text-align: center;}
-#main .main_caption_desc{ padding: 0 25px}
+    border-radius: 43% 55% 75% 25% / 45% 35% 65% 50%;}
+#main .main_caption_title{ font-size: 2.5rem; text-align: center;}
+#main .main_caption_desc{ padding-left: 50px}
 #main form input{ border-radius: 25px; width: 260px; margin-left: 50px}
 #main form .btn{ border-radius: 25px; background-color: #56b17d; border: none; margin-left: 50px; width: 260px}
 #main form .btn.calculate{ background-color: transparent; border: 1px solid #ced4da; color: #575757}
@@ -198,8 +207,8 @@ header ul.navbar_links_main li:nth-of-type(4) a{ color: #7030e5}
 #footer-bottom nav{ position: relative; height: 36px; line-height: 36px; background-color: transparent; box-shadow: none;}
 #footer-bottom ul{ padding-left: 0}
 #footer-bottom ul li{ display: inline-block; }
-#footer-bottom ul li span{ color: #afafaf; font-size: 1rem; padding: 0 1rem; }
-#footer-bottom ul li a{ display: inline-block; height: 100%; color: #373737; font-size: 1rem; padding: 0 1rem; }
+#footer-bottom ul li span{ color: #afafaf; font-size: 0.875rem; padding: 0 1rem; }
+#footer-bottom ul li a{ display: inline-block; height: 100%; color: #373737; font-size: 0.875rem; padding: 0 1rem; }
 #footer-bottom ul li a:hover{ text-decoration: none }
 #footer-bottom ul li a img{ margin-right: 5px; margin-bottom: 3px }
 

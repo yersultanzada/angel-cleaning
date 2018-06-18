@@ -52,4 +52,13 @@ $(document).ready(function () {
         setTimeout(rem4, 4000);
     });
 
+    $('a[data-activates = mobile-dropdown]').click(function () {
+       $('#mobile-dropdown').slideToggle('fast');
+       if($('#mobile-dropdown').hasClass('visible')){
+           $('#mobile-dropdown').removeClass('visible')
+       }else{
+           $('#mobile-dropdown').addClass('visible')
+       }
+    });
+
 });

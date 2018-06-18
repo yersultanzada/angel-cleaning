@@ -18,6 +18,14 @@
     }
 }
 @media only screen and (max-width: 992px){
+    header .header_align{
+        height: 100px;
+    }
+    header #mobile .mobile-menu{
+        position: absolute;
+        right: 10px;
+        top: 25px;
+    }
     #how-we-work .connect{
         display: none;
     }
@@ -48,6 +56,12 @@
     }
 }
 @media only screen and (max-width: 576px){
+    header #mobile ul a:nth-child(2){
+        display: block;
+    }
+    header #mobile .mobile-menu{
+        right: 25px;
+    }
     .calc .container>.row{
         margin-left: 0;
         margin-right: 0;
