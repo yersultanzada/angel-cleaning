@@ -46,8 +46,11 @@ header #mobile .mobile-menu i:before{ font-size: 32px}
 
 header #mobile-dropdown{ display: none}
 header #mobile-dropdown.visible{ display: block}
-header #mobile-dropdown li{ display: block}
-header #mobile-dropdown li:last-child{ float: none}
+header #mobile-dropdown .navbar_links_main li{ display: block}
+header #mobile-dropdown .navbar_links_main li:last-child{ float: none}
+header #mobile-dropdown .navbar_links_main li a{ padding: 6px}
+
+header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 
 #main{ background: url("../img/main-cleaner.png") no-repeat; background-position: top; padding-top: 50px; padding-bottom: 163px}
 #main .main_caption{ position: relative; width: 550px; height: 600px; background-color: #fff; padding: 65px; float: right;
@@ -170,6 +173,13 @@ header #mobile-dropdown li:last-child{ float: none}
 .popover-header{ background-color: rgba(109,64,191,0.8);}
 .popover-body{ color: #fff}
 .bs-popover-auto[x-placement^=right] .arrow::after, .bs-popover-right .arrow::after{ border-right-color: rgba(118,69,206,0.8);}
+.bs-popover-auto[x-placement^=left] .arrow::after, .bs-popover-left .arrow::after{  border-left-color: rgba(118,69,206,0.8);}
+
+#work .bg_color{ background-color: #f2eaff}
+#work .rounded{ border-radius: 0.5rem !important;}
+#work .rounded .btn{ background-color: #7645ce; border-radius: 50%; width: 30px; height: 30px; padding: 2px; color: #fff;}
+#work .rounded .btn i.mdi-plus:before{ font-weight: bold}
+#work .rounded button[aria-expanded=true] i:before{ content: "\F374";}
 
 #work .caption_this{ font-size: 13px;}
 #work .btn{ background-color: #fff; color: #9874da; border-radius: 25px;}

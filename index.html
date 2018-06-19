@@ -70,7 +70,7 @@
                     <ul class="mb-0">
                         <li class="float-none">
                             <a href="tel:+7 707 277 99 84"><img src="img/social/whatsapp-call.png" alt="">+7 707 277 99 84</a>
-                            <a href="tel:+7 7172 77 99 84" class="pl-3">+7 7172 77 99 84</a>
+                            <a href="tel:+7 7172 77 99 84" class="pl-4">+7 7172 77 99 84</a>
                         </li>
                     </ul>
                     <a class="mobile-menu" data-activates="mobile-dropdown">
@@ -81,7 +81,7 @@
         </div>
     </div>
     <div id="mobile-dropdown">
-        <ul class="navbar_links_main text-center">
+        <ul class="navbar_links_main text-center border-bottom">
             <li>
                 <a href="#">Уборка офисов</a>
             </li>
@@ -98,14 +98,28 @@
                 <a href="#">Личный кабинет</a>
             </li>
         </ul>
+        <ul class="navbar_links_top text-center">
+            <li>
+                <span>Задайте вопрос:</span>
+            </li>
+            <li>
+                <a href="#"><img src="img/social/telegram.png" alt=""><span>Telegram</span></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/social/messenger.png" alt=""><span>Messenger</span></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/social/whatsapp.png" alt=""><span>Whatsapp</span></a>
+            </li>
+        </ul>
     </div>
 </header>
 
 <div id="main">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 offset-6 col-md-6 offset-6">
-                <div class="main_caption d-none d-md-block">
+            <div class="col col-lg-6 offset-lg-6">
+                <div class="main_caption">
                     <div class="_block_title main_caption_title mt-3">
                         Доверьте уборку
                         профессионалам
@@ -300,7 +314,7 @@
     </div>
 </section>
 
-<section id="work">
+<section id="work" class="d-none d-md-block">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -769,7 +783,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row d-none d-md-block">
             <div class="col text-right mt-3">
                 <span class="caption_this"><i class="mdi mdi-cursor-pointer mr-2"></i>Наведите на точки, чтобы посмотреть описание!</span>
             </div>
@@ -960,7 +974,7 @@
 
 
 <section id="faq">
-    <div class="container">
+    <div class="container accordion" id="accordion">
         <div class="row">
             <div class="col">
                 <div class="_section_title text-black mb-5">
@@ -977,7 +991,7 @@
                     <i class="mdi mdi-plus"></i>
                 </button>
             </div>
-            <div class="collapse" id="question1">
+            <div class="collapse" id="question1" data-parent="#accordion">
                 <div class="_block_desc p-3">
                     Наши клинеры придут к Вам с полным набором профессиональных средств и профессиональным пылесосом «K'A'RCHER»
                 </div>
@@ -993,7 +1007,7 @@
                     <i class="mdi mdi-plus"></i>
                 </button>
             </div>
-            <div class="collapse" id="question2">
+            <div class="collapse" id="question2" data-parent="#accordion">
                 <div class="_block_desc p-3">
                     Да, в стоимость входит мойка окон с внутренней стороны.
                 </div>
@@ -1009,7 +1023,7 @@
                     <i class="mdi mdi-plus"></i>
                 </button>
             </div>
-            <div class="collapse" id="question3">
+            <div class="collapse" id="question3" data-parent="#accordion">
                 <div class="_block_desc p-3">
                     Да, мы помоем и почистим поверхности до которых тяжело дотянуться. От Вас требуется предупредить нас, чтобы мы взяли с собой стремянку  или же  заказать онлайн в дополнительных услугах.
                 </div>

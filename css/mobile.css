@@ -1,75 +1,122 @@
 @media only screen and (min-width: 1680px){
     header .container{ max-width: 1220px}
+}
+@media only screen and (min-width: 1200px){
     #main .container{ max-width: 1220px}
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px){
-    header ul.navbar_links_top li>span{
-        font-size: 0.8rem;
-    }
-    header ul.navbar_links_top li a{
-        font-size: 0.8rem;
-    }
-    header ul.navbar_links_main li a{
-        font-size: 0.9rem;
-    }
-    .calc .form-check-label{
-        width: 195px;
-        margin-left: 7px;
-    }
+    header ul.navbar_links_top li>span{ font-size: 0.8rem;}
+    header ul.navbar_links_top li a{ font-size: 0.8rem;}
+    header ul.navbar_links_main li a{ font-size: 0.9rem;}
+    .calc .form-check-label{ width: 195px; margin-left: 7px;}
+
+    #work ._dotted_pic_bedroom .dot_3{ left: 240px;}
+    #work ._dotted_pic_bedroom .dot_4{ left: 320px;}
+    #work ._general_type_bedroom .dot_9{ left: 350px;}
+    #work ._general_type_bedroom .dot_10{ right: 240px; top: 130px;}
+    #work ._dotted_pic_hall .dot_2{ left: 235px; top: 100px;}
+    #work ._dotted_pic_hall .dot_3{ right: 420px;}
+    #work ._dotted_pic_kitchen .dot_3{ bottom: 135px;}
+    #work ._dotted_pic_kitchen .dot_10{ left: 375px; bottom: 120px;}
+    #work ._dotted_pic_kitchen .dot_5{ right: 400px; bottom: 100px;}
+    #work ._general_type_kitchen .dot_12{ left: 430px; top: 130px;}
+    #work ._general_type_kitchen .dot_14{ right: 285px; bottom: 85px; }
+    #work ._dotted_pic_bathroom .dot_2{ left: 170px; bottom: 45px;}
+    #work ._dotted_pic_bathroom .dot_3{ left: 290px; bottom: 100px;}
+    #work ._dotted_pic_bathroom .dot_4{ left: 295px; top: 125px; }
+
+}
+@media only screen and (max-width: 1024px){
+    #main{ background: none #EFEDFA; padding-bottom: 50px}
 }
 @media only screen and (max-width: 992px){
-    header .header_align{
-        height: 100px;
-    }
-    header #mobile .mobile-menu{
-        position: absolute;
-        right: 10px;
-        top: 25px;
-    }
-    #how-we-work .connect{
-        display: none;
-    }
-    #advantages ._block_title{
-        font-size: 1.2rem;
-    }
-    #advantages ._block_desc{
-        font-size: 1rem;
-    }
-    .calc .form-check-label{
-        margin-left: 0;
-        padding-left: 0;
-    }
-    .calc .number-control_button_minus{
-        left: 40px;
-    }
-    .calc .number-control_button_plus{
-        right: 40px;
-    }
-    .calc .border-left{
-        border-left: none !important;
-    }
-    .calc .border-right{
-        border-right: none !important;
-    }
-    .calc .b_b{
-        border-bottom: 1px solid #dee2e6;
-    }
+    header .header_align{ height: 100px;}
+    header #mobile .mobile-menu{ position: absolute; right: 10px; top: 25px;}
+
+    #main .main_caption{ width: inherit; height: inherit; background-color: transparent;
+        padding: 0; float: none; box-shadow: none; border-radius: initial}
+    #main form .btn.calculate{ margin-top: .5rem!important; float: right;}
+    #main .main_caption_desc{ padding-left: 12px;}
+    #main form input{ margin-left: 10px;}
+    #main form .btn{ margin-left: 10px;}
+
+    #how-we-work .connect{ display: none;}
+
+    #advantages ._block_title{ font-size: 1.2rem;}
+    #advantages ._block_desc{ font-size: 1rem;}
+
+    .calc .form-check-label{ margin-left: 0; padding-left: 0;}
+    .calc .number-control_button_minus{ left: 40px;}
+    .calc .number-control_button_plus{ right: 40px;}
+    .calc .border-left{ border-left: none !important;}
+    .calc .border-right{ border-right: none !important;}
+    .calc .b_b{ border-bottom: 1px solid #dee2e6;}
+
+    #work ._dot button{ width: 15px; height: 15px; padding: 1px}
+    #work ._dot button span{ width: 11px; height: 11px;}
+    .popover-header{ font-size: 0.875rem;}
+
+    #work ._dotted_pic_bedroom .dot_1{ left: 60px;}
+    #work ._dotted_pic_bedroom .dot_5{ right: 300px; bottom: 65px;}
+    #work ._dotted_pic_bedroom .dot_3{ left: 185px; bottom: 85px; }
+    #work ._dotted_pic_bedroom .dot_8{ right: 285px; top: 15px;}
+    #work ._dotted_pic_bedroom .dot_4{ left: 250px; top: 30px;}
+    #work ._dotted_pic_bedroom .dot_6{ right: 100px; bottom: 30px; }
+    #work ._dotted_pic_bedroom .dot_7{ right: 110px;}
+    #work ._general_type_bedroom .dot_10{ right: 175px; top: 90px;}
+    #work ._general_type_bedroom .dot_9{ left: 200px; }
+    #work ._dotted_pic_hall .dot_1{ bottom: 0; top: 30px; left: 50px;}
+    #work ._dotted_pic_hall .dot_2{ left: 175px; top: 70px;}
+    #work ._dotted_pic_hall .dot_3{ right: 300px;}
+    #work ._dotted_pic_hall .dot_4{ right: 190px; top: 60px;}
+    #work ._general_type_hall .dot_5{ left: 290px; }
+    #work ._dotted_pic_kitchen .dot_1{ left: 50px; top: 30px;}
+    #work ._dotted_pic_kitchen .dot_3{ left: 160px; bottom: 90px;}
+    #work ._dotted_pic_kitchen .dot_2{ left: 125px; bottom: 20px;}
+    #work ._dotted_pic_kitchen .dot_9{ left: 245px; bottom: 15px;}
+    #work ._dotted_pic_kitchen .dot_6{ right: 200px; bottom: 20px;}
+    #work ._dotted_pic_kitchen .dot_5{ right: 270px; bottom: 75px;}
+    #work ._dotted_pic_kitchen .dot_10{ left: 280px; bottom: 85px;}
+    #work ._dotted_pic_kitchen .dot_8{ right: 235px; top: 30px; }
+    #work ._dotted_pic_kitchen .dot_4{ left: 280px; top: 50px;}
+    #work ._dotted_pic_kitchen .dot_7{ right: 200px; top: 100px; }
+    #work ._general_type_kitchen .dot_11{ top: 80px;}
+    #work ._general_type_kitchen .dot_12{ left: 220px; top: 90px;}
+    #work ._general_type_kitchen .dot_13{ right: 300px; top: 40px;}
+    #work ._general_type_kitchen .dot_14{ right: 210px; bottom: 65px;}
+    #work ._dotted_pic_bathroom .dot_1{ left: 60px; bottom: 100px;}
+    #work ._dotted_pic_bathroom .dot_2{ left: 120px; bottom: 35px;}
+    #work ._dotted_pic_bathroom .dot_4{ left: 160px; top: 95px;}
+    #work ._dotted_pic_bathroom .dot_3{ left: 210px; bottom: 70px; }
+    #work ._dotted_pic_bathroom .dot_6{ right: 80px; bottom: 30px;}
+    #work ._dotted_pic_bathroom .dot_5{ right: 250px; bottom: 60px;}
+    #work ._dotted_pic_bathroom .dot_7{ right: 135px; }
+    #work ._general_type_bathroom .dot_8{ right: 230px; top: 55px;}
+
+}
+@media only screen and (max-width: 768px){
+    #main .main_caption{ text-align: center}
+    #main .main_caption_desc{ padding-left: 0}
+    #main form input{ width: 100%; margin-left: 0}
+    #main form .btn{ margin-left: 0}
+    #main form .btn.calculate{ float: none}
 }
 @media only screen and (max-width: 576px){
-    header #mobile ul a:nth-child(2){
-        display: block;
-    }
-    header #mobile .mobile-menu{
-        right: 25px;
-    }
-    .calc .container>.row{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #how-we-work .m_b{
-        margin-bottom: 15px !important;
-    }
-    #footer .b_b{
-        border-bottom: 1px solid #dee2e6;
-    }
+    ._section_title{ font-size: 1.7rem;}
+
+    header #mobile ul a:nth-child(2){ display: block;}
+    header #mobile .mobile-menu{ right: 25px;}
+
+    #main .main_caption_title{ font-size: 2rem; margin-top: 0 !important; margin-bottom: 1rem}
+
+    .calc .container>.row{ margin-left: 0; margin-right: 0;}
+    #how-we-work .m_b{ margin-bottom: 15px !important;}
+
+    #faq .rounded .btn{ float: none !important;}
+    #faq .container>.row{ margin-left: 0; margin-right: 0}
+    #faq ._block_title{ font-size: 1.1rem;}
+    #faq ._block_desc{ font-size: 1rem;}
+
+    #footer .b_b{ border-bottom: 1px solid #dee2e6;}
+
 }
