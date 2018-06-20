@@ -33,6 +33,7 @@
 @media only screen and (max-width: 992px){
     header .header_align{ height: 100px;}
     header #mobile .mobile-menu{ position: absolute; right: 10px; top: 25px;}
+    header._fixed{ position: fixed; z-index: 100; width: 100%; background-color: #fff}
 
     #main .main_caption{ width: inherit; height: inherit; background-color: transparent;
         padding: 0; float: none; box-shadow: none; border-radius: initial}
@@ -101,10 +102,14 @@
     #main form input{ width: 100%; margin-left: 0}
     #main form .btn{ margin-left: 0}
     #main form .btn.calculate{ float: none}
+
+    #how-we-work .m_b{ margin-bottom: 0.8rem !important;}
 }
 @media only screen and (max-width: 576px){
     ._section_title{ font-size: 1.7rem;}
 
+    header .container{ padding: 0 25px}
+    header #mobile ul li{ margin-left: 3rem}
     header #mobile ul a:nth-child(2){ display: block;}
     header #mobile .mobile-menu{ right: 25px;}
 
@@ -114,7 +119,7 @@
     #main .main_caption_title{ font-size: 2rem; margin-top: 0 !important; margin-bottom: 1rem}
 
     .calc .container>.row{ margin-left: 0; margin-right: 0;}
-    #how-we-work .m_b{ margin-bottom: 15px !important;}
+    #how-we-work .m_b{ margin-bottom: 7px !important;}
 
     #faq .rounded .btn{ float: none !important;}
     #faq .container>.row{ margin-left: 0; margin-right: 0}
@@ -125,5 +130,6 @@
     #footer-bottom ul li:first-child{ display: block}
 }
 @media only screen and (max-width: 375px){
+    header #mobile ul li{ margin-left: 1rem}
     #mobile-dropdown .navbar_links_top li{ display: block; margin-bottom: 10px}
 }

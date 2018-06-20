@@ -104,7 +104,7 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 .calc .popup .popup_title{ font-size: 2rem; font-weight: bold; text-align: center; color: #7645ce}
 .calc .popup .popup_text{ text-align: center; color: #575757}
 
-#how-we-work{ padding: 50px}
+#how-we-work{ padding: 50px 0}
 #how-we-work img{ max-width: 100%; height: auto}
 #how-we-work .connect{ position: absolute; top: 0; right: 0}
 #how-we-work .how-we-work_text{ color: #212529; line-height: 1.2}
@@ -188,7 +188,7 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 #order{position: relative; background-color: #7645ce; padding: 50px 0}
 #order span{ border-bottom: 1px solid #fff}
 #order input{ border-radius: 25px; border: none}
-#order .btn{ border-radius: 25px; border: none; background-color: #56b17d }
+#order .btn{ border-radius: 25px; border: none; background-color: #56b17d; white-space: normal; margin-top: -8px; }
 
 #order .popup{ display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%;
     background-color: #7645ce; padding: 60px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);}
@@ -204,7 +204,8 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 #team .member-name{ font-size: 1.3rem; color: #212529; text-transform: uppercase}
 
 #faq{ background-color: #fff; padding: 50px 0;}
-#faq .bg_color{ background-color: #f2eaff}
+#faq .bg_color{ position: relative; background-color: #f2eaff}
+#faq ._btn_right{ position: absolute; right: 15px }
 #faq .rounded{ border-radius: 0.5rem !important;}
 #faq .rounded .btn{ background-color: #7645ce; border-radius: 50%; width: 30px; height: 30px; padding: 2px; color: #fff;}
 #faq .rounded .btn i.mdi-plus:before{ font-weight: bold}

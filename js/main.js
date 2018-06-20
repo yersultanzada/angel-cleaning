@@ -61,4 +61,12 @@ $(document).ready(function () {
        }
     });
 
+    window.onscroll = function() {
+        if (window.pageYOffset >= 100){
+            $('header').addClass('_fixed');
+        }else{
+            $('header').removeClass('_fixed');
+        }
+    }
+
 });
