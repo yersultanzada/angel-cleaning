@@ -52,7 +52,7 @@ header #mobile-dropdown .navbar_links_main li a{ padding: 6px}
 
 header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 
-#main{ background: url("../img/main-cleaner.png") no-repeat; background-position: top; padding-top: 50px; padding-bottom: 163px}
+#main{ background: url("../img/main-cleaner.png") no-repeat; background-position: right top; background-size: contain; padding-top: 50px; }
 #main .main_caption{ position: relative; width: 550px; height: 600px; background-color: #fff; padding: 65px; float: right;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
     -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
@@ -105,6 +105,7 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 .calc .popup .popup_text{ text-align: center; color: #575757}
 
 #how-we-work{ padding: 50px}
+#how-we-work img{ max-width: 100%; height: auto}
 #how-we-work .connect{ position: absolute; top: 0; right: 0}
 #how-we-work .how-we-work_text{ color: #212529; line-height: 1.2}
 
