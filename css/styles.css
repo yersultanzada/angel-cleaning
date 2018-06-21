@@ -122,6 +122,19 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)}
 
 #work .pictures_with_dot{ position: relative}
+#work ._point{ position: relative}
+#work ._point::before{
+    content: "";
+    background-color: #7645ce;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    border-radius: 50%;
+}
+#work ._point p{ position: relative; margin-left: 15px; margin-bottom: 5px}
+
 #work ._dot button{ width: 20px; height: 20px; border-radius: 50%; padding: 3px}
 #work ._dot button:hover{ box-shadow: 0 0 0 0.2rem rgba(118,69,206,.7)}
 #work ._dot button span{ display: block; width: 12px; height: 12px; background-color: #7645ce; border-radius: 50%}
@@ -218,7 +231,8 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 /* модальный блок */
 .dm-modal {
     display: inline-block;
-    padding: 20px;
+    padding: 2rem;
+    margin: 50px 0;
     /* максимально возможная ширина */
     max-width: 65em;
     width: 100%;
@@ -248,14 +262,17 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
     border-radius: 50%;
 }
 .dm-modal ._point p{ position: relative; left: 15px; margin-bottom: 5px}
-/* рисуем кнопарь закрытия */
+.dm-modal ._kitchen_str{ padding-bottom: 3rem}
+.dm-modal ._room_str{ padding-bottom: 4.8rem}
+.dm-modal ._bathroom_str{ padding-bottom: 4.8rem}
 
+    /* рисуем кнопарь закрытия */
 .close {
     z-index: 9999;
     float: right;
     width: 30px;
     height: 30px;
-    color: #cfd8dc;
+    color: #646d71;
     text-align: center;
     text-decoration: none;
     line-height: 26px;
@@ -267,7 +284,7 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 }
 .close:after {
     display: block;
-    border: 2px solid #cfd8dc;
+    border: 2px solid #646d71;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -283,8 +300,8 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 /* кнопка закрытия при наведении */
 
 .close:hover:after {
-    border-color: #b6bdc1;
-    color: #b6bdc1;
+    border-color: #212529;
+    color: #212529;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
