@@ -8,7 +8,10 @@
     header ul.navbar_links_top li>span{ font-size: 0.8rem;}
     header ul.navbar_links_top li a{ font-size: 0.8rem;}
     header ul.navbar_links_main li a{ font-size: 0.9rem;}
+
     #main .container{ max-width: 1100px}
+    #main .col-lg-4{ flex: 0 0 41.666667%; max-width: 41.666667%;}
+    #main .main_caption_title{ font-size: 2rem}
     .calc .form-check-label{ width: 195px; margin-left: 7px;}
 
     #work ._dotted_pic_bedroom .dot_3{ left: 240px;}
@@ -27,20 +30,20 @@
     #work ._dotted_pic_bathroom .dot_4{ left: 295px; top: 125px; }
 
 }
-@media only screen and (max-width: 1024px){
-    #main{ background: none #EFEDFA; padding-bottom: 50px}
-}
 @media only screen and (max-width: 992px){
     header .header_align{ height: 100px;}
     header #mobile .mobile-menu{ position: absolute; right: 10px; top: 25px;}
     header._fixed{ position: fixed; z-index: 100; width: 100%; background-color: #fff}
 
-    #main .main_caption{ width: inherit; height: inherit; background-color: transparent;
-        padding: 0; float: none; box-shadow: none; border-radius: initial}
-    #main form .btn.calculate{ margin-top: .5rem!important; float: right;}
+    #main{ background: url("../img/mobile_bg.jpg") no-repeat; background-size: cover; padding-bottom: 70px }
+    #main .main_caption{ padding: 0;}
+    #main .main_caption_title{ color: #fff}
+    #main .main_caption_desc{ color: #fff}
+    #main form .btn.calculate{ margin-top: .5rem!important; float: right; color: #fff; border: 1px solid #fff}
     #main .main_caption_desc{ padding-left: 12px;}
     #main form input{ margin-left: 10px;}
     #main form .btn{ margin-left: 10px;}
+    #main .popup{ top: 8rem}
 
     #how-we-work .connect{ display: none;}
 
@@ -102,6 +105,7 @@
     #main form input{ width: 100%; margin-left: 0}
     #main form .btn{ margin-left: 0}
     #main form .btn.calculate{ float: none}
+    #main .popup{ left: 5rem;}
 
     #how-we-work .m_b{ margin-bottom: 0.8rem !important;}
 }
@@ -112,6 +116,9 @@
     header #mobile ul li{ margin-left: 3rem}
     header #mobile ul a:nth-child(2){ display: block;}
     header #mobile .mobile-menu{ right: 25px;}
+
+    #main .popup{ padding: 2rem}
+    #main .popup .popup_title{ font-size: 1.5rem}
 
     #mobile-dropdown .navbar_links_top li:first-child{ display: block; margin-bottom: 15px}
     #mobile-dropdown .navbar_links_main{ padding-bottom: 15px}
@@ -129,7 +136,11 @@
     #footer .b_b{ border-bottom: 1px solid #dee2e6;}
     #footer-bottom ul li:first-child{ display: block}
 }
+@media only screen and (max-width: 425px){
+    #main .popup{ left: 3rem; top: 11rem}
+}
 @media only screen and (max-width: 375px){
     header #mobile ul li{ margin-left: 1rem}
+    #main .popup{ left: 1rem; top: 10rem}
     #mobile-dropdown .navbar_links_top li{ display: block; margin-bottom: 10px}
 }
