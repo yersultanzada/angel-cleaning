@@ -17,10 +17,29 @@ $(document).ready(function () {
      *  Активация попапов
      */
     $("#main ._order").click(function () {
+
+        var overlay = $('.popup_fog');
+
+        overlay.fadeIn();
+        overlay.css({
+            'display': 'block'
+        });
         $("#main .popup").addClass('active');
+        $('body').css({
+            'overflow': 'hidden'
+        });
+
+
 
         function rem1() {
+            overlay.css({
+                'display': 'none'
+            });
             $("#main .popup").removeClass('active');
+            $('body').css({
+                'overflow': 'auto'
+            });
+
         }
         setTimeout(rem1, 4000);
     });

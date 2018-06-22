@@ -62,9 +62,13 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 #main form .btn.calculate{ background-color: transparent; border: 1px solid #ced4da; color: #575757}
 #main form .btn.calculate .mdi-chevron-right:before{ vertical-align: middle}
 
-#main .popup{ display: none; position: absolute; left: 0; top: 15rem;
+#main .popup_fog{ display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; background: rgba(0, 0, 0, 0.65); cursor: pointer;}
+#main .popup{ display: none; position: fixed; top: 30%; left:50%; transform: translate(-50%, -50%); background: #fff; z-index: 10000;
+    border-radius: 5px; padding: 3rem; box-shadow: 0 15px 20px rgba(0,0,0,.22), 0 19px 60px rgba(0,0,0,.3); overflow: hidden}
+
+/*#main .popup{ display: none; position: absolute; left: 0; top: 15rem;
     background-color: #fff; padding: 3rem; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); border-radius: 25px;
-}
+}*/
 #main .popup.active{ display: block;}
 #main .popup .popup_title{ font-size: 2rem; font-weight: bold; text-align: center; color: #7645ce}
 #main .popup .popup_text{ text-align: center; color: #575757}
@@ -107,6 +111,8 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 #how-we-work .how-we-work_text{ color: #212529; line-height: 1.2}
 
 #work{ background-color: #ebe2fa; padding: 50px 0}
+#work .container>.row{ margin: 0}
+#work .outer-tabs{ width: 100%}
 #work .outer-tabs>ul{ padding: 0; list-style-type: none; text-align: center}
 #work .outer-tabs>ul li{ display: inline-block; padding: 5px 15px; margin-left: -4px; cursor: pointer;
     color: #8b7fa0; border-bottom: 1px solid #c8b3ea}
@@ -122,6 +128,7 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)}
 
 #work .pictures_with_dot{ position: relative}
+#work .pictures_with_dot .mobile_list{ margin-top: 1.5rem}
 #work ._point{ position: relative}
 #work ._point::before{
     content: "";

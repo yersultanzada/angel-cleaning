@@ -61,6 +61,9 @@
     #work ._dot button span{ width: 11px; height: 11px;}
     .popover-header{ font-size: 0.875rem;}
 
+    #work .inner-tabs ul li:first-child{ border-top-left-radius: 0}
+    #work .inner-tabs ul li:last-child{ border-top-right-radius: 0}
+
     #work ._dotted_pic_bedroom .dot_1{ left: 60px;}
     #work ._dotted_pic_bedroom .dot_5{ right: 300px; bottom: 65px;}
     #work ._dotted_pic_bedroom .dot_3{ left: 185px; bottom: 85px; }
@@ -136,8 +139,13 @@
     #footer .b_b{ border-bottom: 1px solid #dee2e6;}
     #footer-bottom ul li:first-child{ display: block}
 }
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 430px){
+    header .header_align{ height: 70px}
+    header #mobile .mobile-menu{ top: 11px;}
     #main .popup{ left: 3rem; top: 11rem}
+    #work .inner-tabs ul li{ width: 50%; border: 1px solid #ebe2fa;}
+    #work .inner-tabs ul li:first-child{ margin-left: -4px}
+    #work .inner-tabs ul li:last-child{ border-right: 1px solid #ebe2fa;}
 }
 @media only screen and (max-width: 375px){
     header #mobile ul li{ margin-left: 1rem}
