@@ -64,14 +64,14 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 
 #main .popup_fog{ display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; background: rgba(0, 0, 0, 0.65); cursor: pointer;}
 #main .popup{ display: none; position: fixed; top: 30%; left:50%; transform: translate(-50%, -50%); background: #fff; z-index: 10000;
-    border-radius: 5px; padding: 3rem; box-shadow: 0 15px 20px rgba(0,0,0,.22), 0 19px 60px rgba(0,0,0,.3); overflow: hidden}
+    border-radius: 5px; min-width: 300px; padding: 2rem 3rem; box-shadow: 0 15px 20px rgba(0,0,0,.22), 0 19px 60px rgba(0,0,0,.3); overflow: hidden}
 
 /*#main .popup{ display: none; position: absolute; left: 0; top: 15rem;
     background-color: #fff; padding: 3rem; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); border-radius: 25px;
 }*/
 #main .popup.active{ display: block;}
-#main .popup .popup_title{ font-size: 2rem; font-weight: bold; text-align: center; color: #7645ce}
-#main .popup .popup_text{ text-align: center; color: #575757}
+#main .popup .popup_title{ font-size: 1.7rem; font-weight: bold; line-height: 1.2; text-align: center; color: #7645ce}
+#main .popup .popup_text{ text-align: center; line-height: 1.2; color: #575757; margin-top: 10px}
 
 #main-adv{ padding: 50px 0}
 
@@ -186,6 +186,7 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 #work ._dotted_pic_bathroom .dot_6{ position: absolute; right: 160px; bottom: 50px}
 #work ._dotted_pic_bathroom .dot_7{ position: absolute; right: 220px; top: 50px}
 #work ._general_type_bathroom .dot_8{ position: absolute; right: 330px; top: 130px}
+#work .mobile_list{ display: none}
 
 .popover{ background-color: rgba(118,69,206,0.8); color: #fff}
 .popover-header{ background-color: rgba(109,64,191,0.8);}

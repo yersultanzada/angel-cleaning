@@ -43,7 +43,6 @@
     #main .main_caption_desc{ padding-left: 12px;}
     #main form input{ margin-left: 10px;}
     #main form .btn{ margin-left: 10px;}
-    #main .popup{ top: 8rem}
 
     #how-we-work .connect{ display: none;}
 
@@ -101,6 +100,9 @@
     #work ._dotted_pic_bathroom .dot_7{ right: 135px; }
     #work ._general_type_bathroom .dot_8{ right: 230px; top: 55px;}
 
+    #work .desktop_list{ display: none}
+    #work .mobile_list{ display: block}
+
 }
 @media only screen and (max-width: 768px){
     #main .main_caption{ text-align: center}
@@ -108,7 +110,8 @@
     #main form input{ width: 100%; margin-left: 0}
     #main form .btn{ margin-left: 0}
     #main form .btn.calculate{ float: none}
-    #main .popup{ left: 5rem;}
+
+    #main .popup .popup_title{ font-size: 1.5rem}
 
     #how-we-work .m_b{ margin-bottom: 0.8rem !important;}
 }
@@ -121,7 +124,6 @@
     header #mobile .mobile-menu{ right: 25px;}
 
     #main .popup{ padding: 2rem}
-    #main .popup .popup_title{ font-size: 1.5rem}
 
     #mobile-dropdown .navbar_links_top li:first-child{ display: block; margin-bottom: 15px}
     #mobile-dropdown .navbar_links_main{ padding-bottom: 15px}
@@ -142,13 +144,11 @@
 @media only screen and (max-width: 430px){
     header .header_align{ height: 70px}
     header #mobile .mobile-menu{ top: 11px;}
-    #main .popup{ left: 3rem; top: 11rem}
     #work .inner-tabs ul li{ width: 50%; border: 1px solid #ebe2fa;}
     #work .inner-tabs ul li:first-child{ margin-left: -4px}
     #work .inner-tabs ul li:last-child{ border-right: 1px solid #ebe2fa;}
 }
 @media only screen and (max-width: 375px){
     header #mobile ul li{ margin-left: 1rem}
-    #main .popup{ left: 1rem; top: 10rem}
     #mobile-dropdown .navbar_links_top li{ display: block; margin-bottom: 10px}
 }
