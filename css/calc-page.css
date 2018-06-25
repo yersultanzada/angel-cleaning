@@ -9,6 +9,7 @@
 }
 h2, h3{
     margin-top:0px;
+    margin-bottom: 1.5rem;
 }
 .selecable{
     position: relative;
@@ -17,8 +18,7 @@ h2, h3{
     width: 152px;
     height: 120px;
     margin: 0px 20px 20px 0;
-    color:#4a4242;
-    border: 1px solid #D8D8D8;
+    color:#212529;
     border-radius:4px;
     text-align:center;
     cursor: pointer;
@@ -35,16 +35,14 @@ h2, h3{
 .selecable .inner_data span.middle_text{
     display: block;
     padding: 0 10px;
-    line-height: 19px;
+    margin-top: 10px;
 }
 .selecable:hover{
     color: #7030e5;
     border-color: #7030e5;
 }
 .selecable.selected{
-    background:#7030e5;
-    color:#ffffff;
-    border-color: #7030e5;
+    color: #7645ce;
 }
 #additional_service .selecable.selected{
     background:#ffffff;
@@ -55,16 +53,25 @@ h2, h3{
 }
 .nums input{
     text-align:center;
+    border: none;
 }
 .btn-purp {
     color: #fff;
     background-color: #7030e5;
     border-color: #7030e5;
 }
-.plus_one, .plus_one_addi{
-    background: #7030e5;
+.plus_one, .minus_one{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    color: #000;
+    border: 1px solid #e4e4e4;
+    padding: 2px;
+    margin-top: 2px;
+}
+.plus_one:focus, .minus_one:focus{
+    background-color: #7645ce;
     color: #fff;
-    border: 1px solid #1ea05f;
 }
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus{
     background-color: #1ea05f;
