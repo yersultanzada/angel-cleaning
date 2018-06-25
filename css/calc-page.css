@@ -1,0 +1,78 @@
+.ui-datepicker {
+    z-index:100 !important;
+}
+.form-control[readonly] {
+    background:#fff;
+}
+.field-createorderform-simple_date, .field-select_month, .field-select_week{
+    display:none;
+}
+h2, h3{
+    margin-top:0px;
+}
+.selecable{
+    position: relative;
+    display: table;
+    vertical-align: top;
+    width: 152px;
+    height: 120px;
+    margin: 0px 20px 20px 0;
+    color:#4a4242;
+    border: 1px solid #D8D8D8;
+    border-radius:4px;
+    text-align:center;
+    cursor: pointer;
+    float:left;
+}
+.selecable .inner_data{
+    display: table-cell;
+    vertical-align: middle;
+}
+#additional_service .selecable .inner_data{
+    margin-top:15px;
+    vertical-align: middle;
+}
+.selecable .inner_data span.middle_text{
+    display: block;
+    padding: 0 10px;
+    line-height: 19px;
+}
+.selecable:hover{
+    color: #7030e5;
+    border-color: #7030e5;
+}
+.selecable.selected{
+    background:#7030e5;
+    color:#ffffff;
+    border-color: #7030e5;
+}
+#additional_service .selecable.selected{
+    background:#ffffff;
+    color:#7030e5;
+}
+.nums{
+    margin-bottom:20px;
+}
+.nums input{
+    text-align:center;
+}
+.btn-purp {
+    color: #fff;
+    background-color: #7030e5;
+    border-color: #7030e5;
+}
+.plus_one, .plus_one_addi{
+    background: #7030e5;
+    color: #fff;
+    border: 1px solid #1ea05f;
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus{
+    background-color: #1ea05f;
+    border-color: #1ea05f;
+}
+.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text{
+    color:#fff;
+}
+.collapse{
+    padding-left:20px;
+}
