@@ -9,58 +9,67 @@
     <!--    <link rel="stylesheet" href="css/owlCarousel/owl.carousel.min.css">
         <link rel="stylesheet" href="css/owlCarousel/owl.theme.default.min.css">-->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/calc-page.css">
+    <link rel="stylesheet" href="css/order.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
-<div id="cacl-page">
+<div id="order-page">
     <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="action_steps text-center my-5">
+                    <span class="step active">1</span>
+                    <img src="img/order_page/connect1.png" alt="">
+                    <span class="step">2</span>
+                    <img src="img/order_page/connect2.png" alt="">
+                    <span class="step">3</span>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center">Расскажите немного о Вашей квартире или доме</h2>
             </div>
         </div>
-        <hr>
+
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                 <div id="p0" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
                     <form id="form-create-order" action="/site/create-order" method="post">
                     <input type="hidden" name="_csrf-frontend" value="rtm9u0A5dTjdwQ86RkqEpTOgIuYcr15o8Z-IPgwEZZL8iMzQE1EcDJGvOUozHOXpQ-dNskj6GRm28st0X29Q9g==">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="objects">
+                        <div class="col-12">
                             <h3>Где Вы живете?</h3>
+                        </div>
+                    </div>
+                    <div class="row _apart_type py-3">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="objects">
                             <div class="selecable make_click selected" data-row="1" data-id="1">
                                 <div class="inner_data">
-                                    <img src="img/order_page/house.png" alt="" style="width: 95px">
+                                    <img src="img/order_page/house.png" alt="">
                                     <span class="middle_text">Дом</span>
                                 </div>
                             </div>
                             <div class="selecable" data-row="1" data-id="2">
                                 <div class="inner_data">
-                                    <img src="img/order_page/flat.png" alt="" style="width: 95px">
+                                    <img src="img/order_page/flat.png" alt="">
                                     <span class="middle_text">Квартира</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <!--<label>Количество жилых комнат?</label>-->
-                                <div class="nums">
-                                    <div class="input-group">
-                                        <span class="input-group-addon btn minus_one" rel="#rooms">-</span>
-                                        <input type="text" value="1" min="1" class="form-control" id="rooms" readonly="true">
-                                        <span class="input-group-addon btn plus_one" rel="#rooms">+</span>
-                                    </div>
+                            <div class="nums">
+                                <div class="input-group pb-3 border-bottom">
+                                    <span class="input-group-addon btn minus_one" rel="#rooms">-</span>
+                                    <input type="text" value="1 комнатная" min="1" class="form-control" id="rooms" readonly="true">
+                                    <span class="input-group-addon btn plus_one" rel="#rooms">+</span>
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <!--<label>Количество санузлов?</label>-->
-                                <div class="nums">
-                                    <div class="input-group">
-                                        <span class="input-group-addon btn minus_one" rel="#bathrooms">-</span>
-                                        <input type="text" value="1" min="1" class="form-control" id="bathrooms" readonly="true">
-                                        <span class="input-group-addon btn plus_one" rel="#bathrooms">+</span>
-                                    </div>
+                            <div class="nums">
+                                <div class="input-group pt-3">
+                                    <span class="input-group-addon btn minus_one" rel="#bathrooms">-</span>
+                                    <input type="text" value="1 санузел" min="1" class="form-control" id="bathrooms" readonly="true">
+                                    <span class="input-group-addon btn plus_one" rel="#bathrooms">+</span>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
@@ -68,22 +77,25 @@
                         <div class="clearfix"></div>
                     </div>
                     <hr>
-                    <div class="row">
+                    <div class="row _clean_type py-3">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h3>Какой тип уборки?</h3>
+                            <h3>Выберите тип уборки</h3>
                             <div class="selecable make_click selected" data-row="2" data-id="1">
                                 <div class="inner_data">
                                     <span class="middle_text">Поддерживающая</span>
+                                    <i class="mdi mdi-check"></i>
                                 </div>
                             </div>
                             <div class="selecable" data-row="2" data-id="2">
                                 <div class="inner_data">
                                     <span class="middle_text">Генеральная</span>
+                                    <i class="mdi mdi-check"></i>
                                 </div>
                             </div>
                             <div class="selecable" data-row="2" data-id="3">
                                 <div class="inner_data">
                                     <span class="middle_text">После ремонта</span>
+                                    <i class="mdi mdi-check"></i>
                                 </div>
                             </div>
                         </div>
@@ -91,268 +103,304 @@
                     </div>
                     <hr>
                     <div id="regular">
-                        <div class="row">
+                        <div class="row _sale_type py-3">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <h3>Как часто у Вас убираться?</h3>
                                 <div class="selecable" data-row="3" data-id="1">
                                     <div class="inner_data">
+                                        <div class="sale_img d-inline-block"></div>
+                                        <div class="d-inline-block">
+                                            <div class="sale_percent">10%</div>
+                                            <div class="sale_text">скидка</div>
+                                        </div>
                                         <span class="middle_text">Каждый месяц</span>
-                                        <span class="middle_text">10%</span>
                                     </div>
-
                                 </div>
 
                                 <div class="selecable" data-row="3" data-id="2">
                                     <div class="inner_data">
+                                        <div class="sale_img d-inline-block"></div>
+                                        <div class="d-inline-block">
+                                            <div class="sale_percent">15%</div>
+                                            <div class="sale_text">скидка</div>
+                                        </div>
                                         <span class="middle_text">Каждые 2 недели</span>
-                                        <span class="middle_text">15%</span>
                                     </div>
-
                                 </div>
 
                                 <div class="selecable make_click" data-row="3" data-id="3">
                                     <div class="inner_data">
+                                        <div class="sale_img d-inline-block"></div>
+                                        <div class="d-inline-block">
+                                            <div class="sale_percent">20%</div>
+                                            <div class="sale_text">скидка</div>
+                                        </div>
                                         <span class="middle_text">Каждую неделю</span>
-                                        <span class="middle_text">20%</span>
                                     </div>
-
                                 </div>
 
-                                <div class="selecable make_click selected" data-row="3" data-id="0">
+                                <div class="selecable make_click selected" data-row="3" data-id="0" style="margin-top: 6px">
                                     <div class="inner_data">
+                                        <div class="sale_img d-inline-block"></div>
                                         <span class="middle_text">Один раз</span>
-                                        <span class="middle_text">0%</span>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <hr>
                     </div>
-                    <div class="row" id="additional_service">
+                    <div class="row py-3" id="additional_service">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h3>Включить дополнительные услуги?</h3>
+                            <h3>Включить дополнительные услуги</h3>
                             <div class="selecable" data-row="4" data-id="1" id="addi_s_1">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="1">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_1" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="1">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text"> Убраться на балконе</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/balcony.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Убраться на балконе</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="1">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_1" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="1">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="4" id="addi_s_4">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="4">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_4" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="4">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Мытье люстры </span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/chand.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Мытье люстры</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="4">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_4" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="4">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="5" id="addi_s_5">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="5">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_5" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="5">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Почистить холодильник</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/fridge.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Почистить холодильник</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="5">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_5" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="5">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="6" id="addi_s_6">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="6">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_6" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="6">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Помыть духовку</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/oven.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Помыть духовку</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="6">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_6" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="6">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="7" id="addi_s_7">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="7">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_7" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="7">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Помыть микроволновую печь</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/microwave.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Помыть микроволновую печь</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="7">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_7" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="7">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="8" id="addi_s_8">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="8">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_8" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="8">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Помыть посудомоечную машину</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/dishwash.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Помыть посудомоечную машину</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="8">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_8" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="8">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="9" id="addi_s_9">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="9">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_9" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="9">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Помыть стены 10 кв/м</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/wall.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Помыть стены 10 кв/м</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="9">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_9" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="9">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="10" id="addi_s_10">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="10">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_10" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="10">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Прибрать кухонные шкафы</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/kitchen.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Прибрать кухонные шкафы</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="10">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_10" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="10">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="11" id="addi_s_11">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="11">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_11" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="11">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Помыть лоток питомца</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/pet.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Помыть лоток питомца</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="11">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_11" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="11">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="12" id="addi_s_12">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="12">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_12" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="12">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Погладить вещи</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/iron.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Погладить вещи</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="12">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_12" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="12">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="13" id="addi_s_13">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="13">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_13" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="13">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Убраться в гардеробной</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/clothes.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Убраться в гардеробной</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="13">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_13" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="13">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="14" id="addi_s_14">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="14">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_14" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="14">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Снять и одеть шторы </span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/curtain.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Снять и одеть шторы </span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="14">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_14" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="14">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="15" id="addi_s_15">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="15">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_15" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="15">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Помыть посуду</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/dish.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Помыть посуду</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="15">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_15" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="15">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="selecable" data-row="4" data-id="16" id="addi_s_16">
                                 <div class="inner_data">
-                        <span class="middle_text">
-                            <div class="nums">
-                                <div class="input-group">
-                                    <span class="input-group-addon btn btn-default minus_one_addi" rel="16">-</span>
-                                    <input type="text" value="0" min="0" class="form-control" id="addi_16" readonly="true">
-                                    <span class="input-group-addon btn btn-purp plus_one_addi" rel="16">+</span>
-                                </div>
-                            </div>
-                        </span>
-
-                                    <span class="middle_text">Помыть жалюзи 2 кв/м</span>
+                                    <div class="add_img">
+                                        <img src="img/order_page/jalousie.png" alt="">
+                                    </div>
+                                    <div class="add_text">
+                                        <span class="middle_text">Помыть жалюзи 2 кв/м</span>
+                                    </div>
+                                    <div class="nums">
+                                        <div class="input-group pt-2 mt-2 border-top">
+                                            <span class="input-group-addon btn minus_one" rel="16">-</span>
+                                            <input type="text" value="0" min="0" class="form-control" id="addi_16" readonly="true">
+                                            <span class="input-group-addon btn plus_one" rel="16">+</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <hr>
-                    <div class="row" id="date_ordering">
+                    <div class="row py-3 _clean_time" id="date_ordering">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h3>Когда нам убраться у Вас?</h3>
+                            <h3>Выберите удобное время для уборки</h3>
 
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
                                     <div class="form-group field-createorderform-simple_date" style="display: block;">
 
                                         <input type="text" id="simple_date" class="form-control datepic hasDatepicker" name="CreateOrderForm[simple_date]" placeholder="Выберите дату">
@@ -412,9 +460,8 @@
 
                                     <p class="help-block help-block-error"></p>
                                 </div>                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0">
                                     <div class="form-group field-select_time required">
-
                                         <select id="select_time" class="form-control" name="CreateOrderForm[time]" aria-required="true">
                                             <option value="">Выберите время</option>
                                             <option value="7:00">7:00</option>
@@ -446,9 +493,10 @@
                                             <option value="20:00">20:00</option>
                                             <option value="20:30">20:30</option>
                                         </select>
-
+                                        <i class="mdi mdi-chevron-down"></i>
                                         <p class="help-block help-block-error"></p>
-                                    </div>                </div>
+                                    </div>
+                                </div>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="clearfix"></div>
@@ -458,35 +506,35 @@
 
                     <hr>
 
-                    <div class="row" id="date_ordering">
+                    <div class="row py-3 _clean_details" id="date_ordering">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h3>Где нам убраться у Вас</h3>
+                            <h3>Детали заказа</h3>
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <div class="form-group field-city required">
-                                                <label class="control-label" for="city">Город</label>
                                                 <select id="city" class="form-control" name="CreateOrderForm[city_id]" aria-required="true">
                                                     <option value="1">Астана</option>
                                                 </select>
-
+                                                <i class="mdi mdi-chevron-down"></i>
                                                 <p class="help-block help-block-error"></p>
-                                            </div>                    </div>
+                                            </div>
+                                        </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <div class="form-group field-createorderform-street required">
-                                                <label class="control-label" for="createorderform-street">Улица</label>
-                                                <input type="text" id="createorderform-street" class="form-control" name="CreateOrderForm[street]" aria-required="true">
+                                                <input type="text" id="createorderform-street" class="form-control" placeholder="Улица" name="CreateOrderForm[street]" aria-required="true">
 
                                                 <p class="help-block help-block-error"></p>
-                                            </div>                    </div>
+                                            </div>
+                                        </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <div class="form-group field-createorderform-house required">
-                                                <label class="control-label" for="createorderform-house">Дом</label>
-                                                <input type="text" id="createorderform-house" class="form-control" name="CreateOrderForm[house]" aria-required="true">
+                                                <input type="text" id="createorderform-house" class="form-control" placeholder="Дом" name="CreateOrderForm[house]" aria-required="true">
 
                                                 <p class="help-block help-block-error"></p>
-                                            </div>                    </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
@@ -495,43 +543,43 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <div class="form-group field-createorderform-housing">
-                                                <label class="control-label" for="createorderform-housing">Корпус</label>
-                                                <input type="text" id="createorderform-housing" class="form-control" name="CreateOrderForm[housing]">
+                                                <input type="text" id="createorderform-housing" class="form-control" placeholder="Корпус" name="CreateOrderForm[housing]">
 
                                                 <p class="help-block help-block-error"></p>
-                                            </div>                    </div>
+                                            </div>
+                                        </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <div class="form-group field-createorderform-complex">
-                                                <label class="control-label" for="createorderform-complex">Жилой комплекс</label>
-                                                <input type="text" id="createorderform-complex" class="form-control" name="CreateOrderForm[complex]">
+                                                <input type="text" id="createorderform-complex" class="form-control" placeholder="Жилой комплекс" name="CreateOrderForm[complex]">
 
                                                 <p class="help-block help-block-error"></p>
-                                            </div>                    </div>
+                                            </div>
+                                        </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <div class="form-group field-createorderform-apartment">
-                                                <label class="control-label" for="createorderform-apartment">Квартира</label>
-                                                <input type="text" id="createorderform-apartment" class="form-control" name="CreateOrderForm[apartment]">
+                                                <input type="text" id="createorderform-apartment" class="form-control" placeholder="Квартира" name="CreateOrderForm[apartment]">
 
                                                 <p class="help-block help-block-error"></p>
-                                            </div>                    </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group field-createorderform-flor">
-                                                <label class="control-label" for="createorderform-flor">Этаж</label>
-                                                <input type="text" id="createorderform-flor" class="form-control" name="CreateOrderForm[flor]">
+                                                <input type="text" id="createorderform-flor" class="form-control" placeholder="Этаж" name="CreateOrderForm[flor]">
 
                                                 <p class="help-block help-block-error"></p>
-                                            </div>                    </div>
+                                            </div>
+                                        </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group field-createorderform-entrance">
-                                                <label class="control-label" for="createorderform-entrance">Подъезд</label>
-                                                <input type="text" id="createorderform-entrance" class="form-control" name="CreateOrderForm[entrance]">
+                                                <input type="text" id="createorderform-entrance" class="form-control" placeholder="Подъезд" name="CreateOrderForm[entrance]">
 
                                                 <p class="help-block help-block-error"></p>
-                                            </div>                    </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

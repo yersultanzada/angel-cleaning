@@ -1,0 +1,110 @@
+#order-page .step{ font-size: 32px}
+#order-page .step.active{ font-size: 32px; color: #7135d0}
+#order-page .action_steps img{ width: 80px; vertical-align: baseline; margin: 0 15px}
+#order-page hr{ border-top: 3px solid #ffdc63;}
+
+._apart_type .nums .input-group{ width: 280px;}
+._clean_type .selecable{ height: 0; text-align: left}
+._clean_type .selecable .inner_data{ display: block; width: 220px; border: 1px solid #e4e4e4; border-radius: 25px; padding: 7px 15px}
+._clean_type .selecable.selected .inner_data{ border: 2px solid #7645ce;}
+._clean_type .selecable .middle_text{ display: inline !important; margin: 0 !important; padding: 0 !important;}
+._clean_type .selecable .inner_data i{ display: none; float: right}
+._clean_type .selecable.selected .inner_data i{ display: block;}
+
+._sale_type .selecable{ width: 0; height: 0}
+._sale_type .sale_img{ background: url("../img/order_page/tag-yellow.png") no-repeat; width: 36px; height: 36px;}
+._sale_type .sale_percent{ font-size: 24px; font-weight: bold; line-height: 1.2}
+._sale_type .sale_text{ margin-top: -5px}
+
+#additional_service .add_img{ min-height: 65px}
+#additional_service .add_img img{ vertical-align: bottom}
+#additional_service .add_text{ display: table; min-height: 57px}
+#additional_service .add_text span.middle_text{ display: table-cell; vertical-align: middle}
+
+._clean_time .form-control{ border-radius: 25px}
+._clean_time select{ -webkit-appearance: none}
+._clean_time .field-select_time{ position: relative}
+._clean_time .field-select_time i{ position: absolute; top: 0; right: 5px; font-size: 24px}
+
+._clean_details .form-control{ border-radius: 25px}
+._clean_details select{ -webkit-appearance: none}
+._clean_details .field-city{ position: relative}
+._clean_details .field-city i{ position: absolute; top: 2px; right: 5px; font-size: 24px}
+
+
+.ui-datepicker {
+    z-index:100 !important;
+}
+.form-control[readonly] {
+    background:#fff;
+}
+.field-createorderform-simple_date, .field-select_month, .field-select_week{
+    display:none;
+}
+h2, h3{
+    margin-top:0px;
+    margin-bottom: 1.5rem;
+}
+.selecable{
+    position: relative;
+    display: table;
+    vertical-align: top;
+    width: 152px;
+    height: 120px;
+    margin: 0px 20px 20px 0;
+    color:#212529;
+    border-radius:4px;
+    text-align:center;
+    cursor: pointer;
+    float:left;
+}
+.selecable .inner_data{
+    display: table-cell;
+    vertical-align: middle;
+}
+#additional_service .selecable .inner_data{
+    margin-top:15px;
+    vertical-align: middle;
+}
+.selecable .inner_data span.middle_text{
+    display: block;
+    padding: 0 10px;
+    margin-top: 10px;
+    line-height: 19px;
+}
+.selecable.selected{
+    color: #7645ce;
+}
+#additional_service .selecable.selected{
+    background:#ffffff;
+    color:#7030e5;
+}
+.nums input{
+    text-align:center;
+    border: none;
+}
+.plus_one, .minus_one{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    color: #000;
+    border: 1px solid #e4e4e4;
+    padding: 2px;
+    margin-top: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.plus_one:focus, .minus_one:focus{
+    background-color: #7645ce;
+    color: #fff;
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus{
+    background-color: #1ea05f;
+    border-color: #1ea05f;
+}
+.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text{
+    color:#fff;
+}
+.collapse{
+    padding-left:20px;
+}
