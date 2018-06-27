@@ -1,9 +1,10 @@
-#order-page .step{ font-size: 32px}
-#order-page .step.active{ font-size: 32px; color: #7135d0}
-#order-page .action_steps img{ width: 80px; vertical-align: baseline; margin: 0 15px}
-#order-page hr{ border-top: 3px solid #ffdc63;}
+.step{ font-size: 32px}
+.step.active{ font-size: 32px; color: #7135d0}
+.action_steps img{ width: 80px; vertical-align: baseline; margin: 0 15px}
+hr{ border-top: 3px solid #ffdc63;}
 
 ._apart_type .nums .input-group{ width: 280px;}
+._apart_type .nums .form-control:focus{ border: none; box-shadow: none}
 ._clean_type .selecable{ height: 0; text-align: left}
 ._clean_type .selecable .inner_data{ display: block; width: 220px; border: 1px solid #e4e4e4; border-radius: 25px; padding: 7px 15px}
 ._clean_type .selecable.selected .inner_data{ border: 2px solid #7645ce;}
@@ -12,7 +13,11 @@
 ._clean_type .selecable.selected .inner_data i{ display: block;}
 
 ._sale_type .selecable{ width: 0; height: 0}
+._sale_type .selecable:hover{ color: #ffc850}
+._sale_type .selecable.selected{ color: #7645ce; cursor: default}
+._sale_type .selecable.selected .sale_img{ background: url("../img/order_page/tag-blue.png") no-repeat; width: 36px; height: 36px;}
 ._sale_type .sale_img{ background: url("../img/order_page/tag-yellow.png") no-repeat; width: 36px; height: 36px;}
+._sale_type .sale_img.img_grey{ background: url("../img/order_page/tag-grey.png") no-repeat; width: 36px; height: 36px;}
 ._sale_type .sale_percent{ font-size: 24px; font-weight: bold; line-height: 1.2}
 ._sale_type .sale_text{ margin-top: -5px}
 
@@ -20,6 +25,7 @@
 #additional_service .add_img img{ vertical-align: bottom}
 #additional_service .add_text{ display: table; min-height: 57px}
 #additional_service .add_text span.middle_text{ display: table-cell; vertical-align: middle}
+#additional_service .selecable.selected .add_text{ color: #7645ce}
 
 ._clean_time .form-control{ border-radius: 25px}
 ._clean_time select{ -webkit-appearance: none}
@@ -30,6 +36,17 @@
 ._clean_details select{ -webkit-appearance: none}
 ._clean_details .field-city{ position: relative}
 ._clean_details .field-city i{ position: absolute; top: 2px; right: 5px; font-size: 24px}
+._valid input{ border: 2px solid #7645ce; color: #7645ce}
+._invalid input{ border: 2px solid #dc4e41; color: #dc4e41}
+
+#make_order{ border-radius: 25px; background-color: #56b17d}
+
+._cart.shadow{ box-shadow: 0 .5rem 1rem rgba(182,163,239,.5) !important;}
+._cart h2{ margin-bottom: 1rem}
+._cart hr{ border-top: 2px solid #b6a3ef !important;}
+._cart .cart_main{ font-size: 13px; line-height: 1.2}
+.cart_details_type, .cart_details_desc{ line-height: 1.2}
+._cart .cart_total{ font-size: 22px; font-weight: bold}
 
 
 .ui-datepicker {
@@ -94,17 +111,23 @@ h2, h3{
     margin-left: 3px;
     margin-right: 3px;
 }
-.plus_one:focus, .minus_one:focus{
+.plus_one.selected, .minus_one.selected{
     background-color: #7645ce;
     color: #fff;
-}
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus{
-    background-color: #1ea05f;
-    border-color: #1ea05f;
-}
-.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text{
-    color:#fff;
 }
 .collapse{
     padding-left:20px;
 }
+
+.account_reg .form-group input{ border-radius: 25px; }
+.account_reg .link_to{ color: #7645ce;}
+.account_reg a:hover{ text-decoration: none}
+.help-block-error{ color: #ee2c54;}
+._payment a{ color: #212529; line-height: 1.2}
+._payment a.selected{ color: #7645ce;}
+._payment a:hover{ text-decoration: none;}
+._payment .custom-checkbox .custom-control-input:checked~.custom-control-label::before{ background-color: #fff;}
+._payment .custom-checkbox .custom-control-input:checked~.custom-control-label::after{ background-image: url("../img/order_page/checkbox.png")}
+._payment .custom-control-label::before{ background-color: #fff; border: 1px solid #e4e4e4; border-radius: 8px; box-shadow: 0 .5rem 1rem rgba(182,163,239,.5) }
+._payment .disabled{ background-color: #acacac !important; opacity: 1; border-color: #acacac !important; cursor: not-allowed}
+._payment .disabled:focus{ box-shadow: none}

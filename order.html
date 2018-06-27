@@ -32,13 +32,13 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+        <div class="row mt-3">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                 <div id="p0" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
                     <form id="form-create-order" action="/site/create-order" method="post">
                     <input type="hidden" name="_csrf-frontend" value="rtm9u0A5dTjdwQ86RkqEpTOgIuYcr15o8Z-IPgwEZZL8iMzQE1EcDJGvOUozHOXpQ-dNskj6GRm28st0X29Q9g==">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 text-center text-lg-left">
                             <h3>Где Вы живете?</h3>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                                 <div class="input-group pb-3 border-bottom">
                                     <span class="input-group-addon btn minus_one" rel="#rooms">-</span>
                                     <input type="text" value="1 комнатная" min="1" class="form-control" id="rooms" readonly="true">
-                                    <span class="input-group-addon btn plus_one" rel="#rooms">+</span>
+                                    <span class="input-group-addon btn plus_one selected" rel="#rooms">+</span>
                                 </div>
                             </div>
                             <div class="nums">
@@ -117,7 +117,7 @@
                                     </div>
                                 </div>
 
-                                <div class="selecable" data-row="3" data-id="2">
+                                <div class="selecable selected" data-row="3" data-id="2">
                                     <div class="inner_data">
                                         <div class="sale_img d-inline-block"></div>
                                         <div class="d-inline-block">
@@ -139,9 +139,9 @@
                                     </div>
                                 </div>
 
-                                <div class="selecable make_click selected" data-row="3" data-id="0" style="margin-top: 6px">
+                                <div class="selecable make_click" data-row="3" data-id="0" style="margin-top: 6px">
                                     <div class="inner_data">
-                                        <div class="sale_img d-inline-block"></div>
+                                        <div class="sale_img img_grey d-inline-block"></div>
                                         <span class="middle_text">Один раз</span>
                                     </div>
                                 </div>
@@ -153,7 +153,7 @@
                     <div class="row py-3" id="additional_service">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <h3>Включить дополнительные услуги</h3>
-                            <div class="selecable" data-row="4" data-id="1" id="addi_s_1">
+                            <div class="selecable selected" data-row="4" data-id="1" id="addi_s_1">
                                 <div class="inner_data">
                                     <div class="add_img">
                                         <img src="img/order_page/balcony.png" alt="">
@@ -522,15 +522,15 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                            <div class="form-group field-createorderform-street required">
-                                                <input type="text" id="createorderform-street" class="form-control" placeholder="Улица" name="CreateOrderForm[street]" aria-required="true">
+                                            <div class="form-group field-createorderform-street required _valid">
+                                                <input type="text" id="createorderform-street" class="form-control" placeholder="Укажите улицу" value="Сейфуллина 54" name="CreateOrderForm[street]" aria-required="true">
 
                                                 <p class="help-block help-block-error"></p>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                            <div class="form-group field-createorderform-house required">
-                                                <input type="text" id="createorderform-house" class="form-control" placeholder="Дом" name="CreateOrderForm[house]" aria-required="true">
+                                            <div class="form-group field-createorderform-house required _invalid">
+                                                <input type="text" id="createorderform-house" class="form-control" placeholder="Укажите дом" value="Укажите дом" name="CreateOrderForm[house]" aria-required="true">
 
                                                 <p class="help-block help-block-error"></p>
                                             </div>
@@ -587,28 +587,62 @@
                         <div class="clearfix"></div>
                     </div>
 
-                    <hr>
-                    <div class="form-group text-center">
-                        <button type="submit" id="make_order" class="btn btn-success btn-lg" name="order-button">Продолжить</button>    </div>
-                </form>    </div></div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h2>Корзина</h2>
-                <hr>
-                <div id="ajax-result">    <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">Основной заказ</h4>
-                        <p class="list-group-item-text"><b>Стоимость:</b> 6500 тг</p>
-                        <p class="list-group-item-text" style="display:none;" id="order_date_in"></p>
-                        <p class="list-group-item-text" style="display:none;" id="order_month_in"></p>
-                        <p class="list-group-item-text" style="display:none;" id="order_week_in"></p>
-                        <p class="list-group-item-text" style="display:none;" id="order_time_in"></p>
-                    </a>
-
-                    <a href="#" class="list-group-item active">
-                        <h4 class="list-group-item-heading">Итого</h4>
-                        <p class="list-group-item-text">6500 тенге</p>
-                    </a>
+                    <div class="form-group text-right">
+                        <button type="submit" id="make_order" class="btn btn-success px-5" name="order-button">Продолжить</button>
+                    </div>
+                </form>
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="shadow p-3 mb-5 bg-white rounded _cart">
+                    <h2 class="text-center">Корзина</h2>
+                    <hr>
+                    <div class="cart_main text-center">
+                        Уборка квартиры с 1 жилой комнатой и 1 санузлом
+                    </div>
+                    <hr>
+                    <!--<div id="ajax-result">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                <h4 class="list-group-item-heading">Основной заказ</h4>
+                                <p class="list-group-item-text"><b>Стоимость:</b> 6500 тг</p>
+                                <p class="list-group-item-text" style="display:none;" id="order_date_in"></p>
+                                <p class="list-group-item-text" style="display:none;" id="order_month_in"></p>
+                                <p class="list-group-item-text" style="display:none;" id="order_week_in"></p>
+                                <p class="list-group-item-text" style="display:none;" id="order_time_in"></p>
+                            </a>
+
+                            <a href="#" class="list-group-item active">
+                                <h4 class="list-group-item-heading">Итого</h4>
+                                <p class="list-group-item-text">6500 тенге</p>
+                            </a>
+                        </div>
+                    </div>-->
+                    <div class="cart_details">
+                        <div class="row mb-3">
+                            <div class="cart_details_type col-6 font-weight-bold">Дата уборки</div>
+                            <div class="cart_details_desc col-6 text-right">18 июня, 2018 в 7 утра</div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="cart_details_type col-6 font-weight-bold">Время уборки</div>
+                            <div class="cart_details_desc col-6 text-right">- 3ч. 00 мин.</div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="cart_details_type col-6 font-weight-bold">Частота уборки</div>
+                            <div class="cart_details_desc col-6 text-right">Каждую неделю</div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="cart_details_type col-6 font-weight-bold">Количество мастеров</div>
+                            <div class="cart_details_desc col-6 text-right">1</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cart_total">
+                        <div class="row mb-3">
+                            <div class="col-6">Итого</div>
+                            <div class="col-6 text-right">5200</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
