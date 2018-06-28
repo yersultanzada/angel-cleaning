@@ -9,11 +9,10 @@
     <!--    <link rel="stylesheet" href="css/owlCarousel/owl.carousel.min.css">
         <link rel="stylesheet" href="css/owlCarousel/owl.theme.default.min.css">-->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/order.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
-<div id="order-page">
+<div id="main_body">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -33,7 +32,7 @@
         </div>
 
         <div class="row mt-3">
-            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-8 pr-lg-5">
                 <div id="p0" data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000">
                     <form id="form-create-order" action="/site/create-order" method="post">
                     <input type="hidden" name="_csrf-frontend" value="rtm9u0A5dTjdwQ86RkqEpTOgIuYcr15o8Z-IPgwEZZL8iMzQE1EcDJGvOUozHOXpQ-dNskj6GRm28st0X29Q9g==">
@@ -43,7 +42,7 @@
                         </div>
                     </div>
                     <div class="row _apart_type py-3">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="objects">
+                        <div class="col-md-6" id="objects">
                             <div class="selecable make_click selected" data-row="1" data-id="1">
                                 <div class="inner_data">
                                     <img src="img/order_page/house.png" alt="">
@@ -57,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="col-md-6 _mob_center">
                             <div class="nums">
                                 <div class="input-group pb-3 border-bottom">
                                     <span class="input-group-addon btn minus_one" rel="#rooms">-</span>
@@ -78,9 +77,9 @@
                     </div>
                     <hr>
                     <div class="row _clean_type py-3">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h3>Выберите тип уборки</h3>
-                            <div class="selecable make_click selected" data-row="2" data-id="1">
+                        <div class="col-12">
+                            <h3 class="text-center text-lg-left">Выберите тип уборки</h3>
+                            <div class="selecable make_click selected mb-sm-0" data-row="2" data-id="1">
                                 <div class="inner_data">
                                     <span class="middle_text">Поддерживающая</span>
                                     <i class="mdi mdi-check"></i>
@@ -104,8 +103,8 @@
                     <hr>
                     <div id="regular">
                         <div class="row _sale_type py-3">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h3>Как часто у Вас убираться?</h3>
+                            <div class="col-12">
+                                <h3 class="text-center text-lg-left">Как часто у Вас убираться?</h3>
                                 <div class="selecable" data-row="3" data-id="1">
                                     <div class="inner_data">
                                         <div class="sale_img d-inline-block"></div>
@@ -151,8 +150,8 @@
                         <hr>
                     </div>
                     <div class="row py-3" id="additional_service">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h3>Включить дополнительные услуги</h3>
+                        <div class="col-12">
+                            <h3 class="text-center text-lg-left">Включить дополнительные услуги</h3>
                             <div class="selecable selected" data-row="4" data-id="1" id="addi_s_1">
                                 <div class="inner_data">
                                     <div class="add_img">
@@ -396,11 +395,11 @@
                     </div>
                     <hr>
                     <div class="row py-3 _clean_time" id="date_ordering">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h3>Выберите удобное время для уборки</h3>
+                        <div class="col-12">
+                            <h3 class="text-center text-lg-left">Выберите удобное время для уборки</h3>
 
-                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                            <div class="col-lg-8 col-12 row">
+                                <div class="col-sm-6 pl-sm-0">
                                     <div class="form-group field-createorderform-simple_date" style="display: block;">
 
                                         <input type="text" id="simple_date" class="form-control datepic hasDatepicker" name="CreateOrderForm[simple_date]" placeholder="Выберите дату">
@@ -460,7 +459,7 @@
 
                                     <p class="help-block help-block-error"></p>
                                 </div>                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0">
+                                <div class="col-sm-6 pr-sm-0">
                                     <div class="form-group field-select_time required">
                                         <select id="select_time" class="form-control" name="CreateOrderForm[time]" aria-required="true">
                                             <option value="">Выберите время</option>
@@ -508,11 +507,11 @@
 
                     <div class="row py-3 _clean_details" id="date_ordering">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h3>Детали заказа</h3>
+                            <h3 class="text-center text-lg-left">Детали заказа</h3>
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="col-sm-4">
                                             <div class="form-group field-city required">
                                                 <select id="city" class="form-control" name="CreateOrderForm[city_id]" aria-required="true">
                                                     <option value="1">Астана</option>
@@ -521,14 +520,14 @@
                                                 <p class="help-block help-block-error"></p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="col-sm-4">
                                             <div class="form-group field-createorderform-street required _valid">
                                                 <input type="text" id="createorderform-street" class="form-control" placeholder="Укажите улицу" value="Сейфуллина 54" name="CreateOrderForm[street]" aria-required="true">
 
                                                 <p class="help-block help-block-error"></p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="col-sm-4">
                                             <div class="form-group field-createorderform-house required _invalid">
                                                 <input type="text" id="createorderform-house" class="form-control" placeholder="Укажите дом" value="Укажите дом" name="CreateOrderForm[house]" aria-required="true">
 
@@ -539,23 +538,23 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <br>
-                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                <div class="col-md-8 col-12">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="col-sm-4">
                                             <div class="form-group field-createorderform-housing">
                                                 <input type="text" id="createorderform-housing" class="form-control" placeholder="Корпус" name="CreateOrderForm[housing]">
 
                                                 <p class="help-block help-block-error"></p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="col-sm-4">
                                             <div class="form-group field-createorderform-complex">
                                                 <input type="text" id="createorderform-complex" class="form-control" placeholder="Жилой комплекс" name="CreateOrderForm[complex]">
 
                                                 <p class="help-block help-block-error"></p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="col-sm-4">
                                             <div class="form-group field-createorderform-apartment">
                                                 <input type="text" id="createorderform-apartment" class="form-control" placeholder="Квартира" name="CreateOrderForm[apartment]">
 
@@ -564,16 +563,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="col-md-4 col-12">
                                     <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="col-sm-6">
                                             <div class="form-group field-createorderform-flor">
                                                 <input type="text" id="createorderform-flor" class="form-control" placeholder="Этаж" name="CreateOrderForm[flor]">
 
                                                 <p class="help-block help-block-error"></p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="col-sm-6">
                                             <div class="form-group field-createorderform-entrance">
                                                 <input type="text" id="createorderform-entrance" class="form-control" placeholder="Подъезд" name="CreateOrderForm[entrance]">
 
@@ -593,7 +592,7 @@
                 </form>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-4">
                 <div class="shadow p-3 mb-5 bg-white rounded _cart">
                     <h2 class="text-center">Корзина</h2>
                     <hr>
@@ -637,10 +636,22 @@
                         </div>
                     </div>
                     <hr>
+                    <div class="cart_addition">
+                        <div class="row mb-2 cart_main">
+                            <div class="col-12">
+                                Дополнительно:
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="cart_details_type col-6 font-weight-bold">Почистить холодильник</div>
+                            <div class="cart_details_desc col-6 text-right">1 250 тенге</div>
+                        </div>
+                    </div>
+                    <hr>
                     <div class="cart_total">
                         <div class="row mb-3">
                             <div class="col-6">Итого</div>
-                            <div class="col-6 text-right">5200</div>
+                            <div class="col-6 text-right">5200 тенге</div>
                         </div>
                     </div>
                 </div>
