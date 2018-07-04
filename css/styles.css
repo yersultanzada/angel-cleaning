@@ -449,6 +449,7 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 
 #main_body #make_order{ border-radius: 25px; background-color: #56b17d}
 
+#main_body ._cart.desktop_fixed_cart{ position: fixed; top: 15px; max-width: 350px}
 #main_body ._cart.shadow{ box-shadow: 0 .5rem 1rem rgba(182,163,239,.5) !important;}
 #main_body ._cart h2{ margin-bottom: 1rem}
 #main_body ._cart hr{ border-top: 2px solid #b6a3ef !important;}
