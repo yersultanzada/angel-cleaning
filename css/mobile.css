@@ -29,7 +29,7 @@
     #work ._dotted_pic_bathroom .dot_3{ left: 290px; bottom: 100px;}
     #work ._dotted_pic_bathroom .dot_4{ left: 295px; top: 125px; }
 
-    #main_body ._cart.desktop_fixed_cart{ max-width: 290px}
+    #main_body ._cart.desktop_fixed_cart{ width: 290px}
 
 }
 @media only screen and (max-width: 992px){
@@ -104,6 +104,8 @@
 
     #work .desktop_list{ display: none}
     #work .mobile_list{ display: block}
+
+    #main_body ._cart.desktop_fixed_cart{ position: relative; top: 0; width: inherit}
 
 }
 @media only screen and (max-width: 768px){

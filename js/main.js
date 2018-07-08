@@ -80,18 +80,12 @@ $(document).ready(function () {
        }
     });
 
-    $(window).load(function () {
-       var e = $(window).width();
-       if(e >= 992) {
-           $('._cart').addClass('desktop_cart')
-       }
-    });
 
     window.onscroll = function() {
-        if ( window.pageYOffset >= 218){
-            $('.desktop_cart').addClass('desktop_fixed_cart');
+        if (window.pageYOffset >= 410){
+            $("._cart").addClass("desktop_fixed_cart");
         }else{
-            $('.desktop_cart').removeClass('desktop_fixed_cart');
+            $("._cart").removeClass("desktop_fixed_cart");
         }
     }
 
