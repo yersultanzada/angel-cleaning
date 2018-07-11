@@ -80,11 +80,12 @@ $(document).ready(function () {
        }
     });
 
+
     window.onscroll = function() {
-        if (window.pageYOffset >= 100){
-            $('header').addClass('_fixed');
+        if (window.pageYOffset >= 410){
+            $("._cart").addClass("desktop_fixed_cart");
         }else{
-            $('header').removeClass('_fixed');
+            $("._cart").removeClass("desktop_fixed_cart");
         }
     }
 
