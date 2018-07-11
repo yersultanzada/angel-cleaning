@@ -412,6 +412,9 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 #main_body ._apart_type .nums .input-group{ width: 85%;}
 #main_body ._apart_type .nums .form-control:focus{ border: none; box-shadow: none}
 #main_body ._apart_type .selecable{ width: 115px}
+#main_body ._apart_type .selecable img._active{ display: none}
+#main_body ._apart_type .selecable.selected img._active{ display: inline-block}
+#main_body ._apart_type .selecable.selected img._inactive{ display: none}
 #main_body ._clean_type .selecable{ height: 0; text-align: left}
 #main_body ._clean_type .selecable .inner_data{ display: block; width: 220px; border: 1px solid #e4e4e4; border-radius: 25px; padding: 7px 15px}
 #main_body ._clean_type .selecable.selected .inner_data{ border: 2px solid #7645ce;}
