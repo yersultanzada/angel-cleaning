@@ -544,6 +544,8 @@ header #mobile-dropdown .navbar_links_top li:last-child{ float: none}
 #main_body ._payment .disabled{ background-color: #acacac !important; opacity: 1; border-color: #acacac !important; cursor: not-allowed}
 #main_body ._payment .disabled:focus{ box-shadow: none}
 
+#main_body ._terms p{font-size: 14px; margin-bottom: 0}
+
 #main_body ._account_img{ width: 200px; height: 200px; border-radius: 12px; background-color: #b6a3ef; margin: auto}
 #main_body ._account_img_load{ display: block; color: #b6a3ef;}
 #main_body ._account_img_load:hover{ color: #7e6cad;}
